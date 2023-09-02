@@ -117,21 +117,23 @@
 
 	<append xpath="/progression/perks">
 		<perk name="attPerception" max_level="10" parent="attGeneral" desc_key="attPerceptionDesc" icon="ui_game_symbol_stealth">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
-			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel04"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel06"/></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel08"/></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel09"/></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<requirement name="ItemHasTags" tags="attPerception"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
+				<requirement name="ItemHasTags" tags="ranged"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="1,10" value=".05,.5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,10" value=".05,.5"/>
+					<passive_effect name="DamageModifier" operation="perc_add" level="1,8" value="0.1,.7" tags="head"/>
 					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
-					<passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+					<passive_effect name="DismemberChance" operation="base_add" level="1,10" value=".05,.45"/>
 				<effect_description level="1"  desc_key="attPerceptionRank01Desc" long_desc_key="attPerceptionRank01LongDesc"/>
 				<effect_description level="2"  desc_key="attPerceptionRank02Desc" long_desc_key="attPerceptionRank02LongDesc"/>
 				<effect_description level="3"  desc_key="attPerceptionRank03Desc" long_desc_key="attPerceptionRank03LongDesc"/>
@@ -146,18 +148,27 @@
 		</perk>
 
 		<perk name="attStrength" max_level="10" parent="attGeneral" desc_key="attStrengthDesc" icon="ui_game_symbol_muscle">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
-			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel04"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel06"/></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel08"/></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel09"/></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<requirement name="ItemHasTags" tags="attStrength"/>
+				<requirement name="ItemHasTags" tags="attFortitude"/>
+				<requirement name="!IsAttachedToEntity" />
+					<passive_effect name="DamageModifier" operation="perc_add" level="1,8" value="0.1,.7" tags="head"/>
+					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
+					<passive_effect name="DismemberChance" operation="base_add" level="1,10" value=".05,.45"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="ItemHasTags" tags="melee"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="1,10" value=".05,.5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,10" value=".05,.5"/>
 					<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
 					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
 					<passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
@@ -175,22 +186,20 @@
 		</perk>
 
 		<perk name="attFortitude" max_level="10" parent="attGeneral" desc_key="attFortitudeDesc" icon="ui_game_symbol_add">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
-			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel04"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel06"/></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel08"/></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel09"/></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<requirement name="ItemHasTags" tags="attFortitude"/>
-				<requirement name="!IsAttachedToEntity" />
-					<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
-					<passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" level="1,10" value=".5,6.5"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" level="1,10" value=".5,6.5" tags="heat,electrical"/>
+				<passive_effect name="BuffResistance" operation="base_add" level="1,10" value="0.005,0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 			</effect_group>
 			<effect_group>
 				<effect_description level="1" desc_key="attFortitudeRank01Desc" long_desc_key="attFortitudeRank01LongDesc"/>
@@ -207,21 +216,23 @@
 		</perk>
 
 		<perk name="attAgility" max_level="10" parent="attGeneral" desc_key="attAgilityDesc" icon="ui_game_symbol_agility">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
-			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel04"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel06"/></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel08"/></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel09"/></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<requirement name="ItemHasTags" tags="attAgility"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
-					<passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" level="1,10" value=".05,.15" />
+				<passive_effect name="RunSpeed" operation="perc_add" level="1,10" value=".05,.15" />
+				<passive_effect name="CrouchSpeed" operation="perc_add" level="1,10" value=".05,.15" />
+				<passive_effect name="JumpStrength" operation="perc_add" level="1,10" value=".05,.15" />
+				<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.05,-.15" tags="walking,running,jumping"/>
+				<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 			</effect_group>
 			<effect_group>
 				<effect_description level="1" desc_key="attAgilityRank01Desc" long_desc_key="attAgilityRank01LongDesc"/>
@@ -238,21 +249,21 @@
 		</perk>
 
 		<perk name="attIntellect" max_level="10" parent="attGeneral" desc_key="attIntellectDesc" icon="ui_game_symbol_intellect">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqGenericPoints02"/></level_requirements>
-			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
-			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints03"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel04"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel06"/></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="2" desc_key="reqPlayerLevel08"/></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel09"/></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<requirement name="ItemHasTags" tags="attIntellect"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
-					<passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+				<passive_effect name="CraftingTime" operation="perc_add" level="1,10" value="-.1,-.5"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1,10" value=".2,1" />
+				<passive_effect name="ScrappingTime" operation="perc_add" level="1,10" value="-.1,-.5"/>
+				<passive_effect name="LootStage" operation="perc_add" level="1,10" value=".05, .5"/>
 				<effect_description level="1" desc_key="attIntellectRank1Desc" long_desc_key="attIntellectRank1LongDesc"/>
 				<effect_description level="2" desc_key="attIntellectRank2Desc" long_desc_key="attIntellectRank2LongDesc"/>
 				<effect_description level="3" desc_key="attIntellectRank3Desc" long_desc_key="attIntellectRank3LongDesc"/>
@@ -268,11 +279,11 @@
 
 		<!-- *** BRAWLER -->
 		<perk name="perkBrawler" parent="skillCombatMelee" name_key="perkBrawlerName" desc_key="perkBrawlerDesc" icon="ui_game_symbol_boxer">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkBrawler"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkBrawler"/>
@@ -341,11 +352,11 @@
 
 		<!-- *** PUMMEL PETE -->
 		<perk name="perkPummelPete" parent="skillCombatMelee" name_key="perkPummelPeteName" desc_key="perkPummelPeteDesc" icon="ui_game_symbol_stunned">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkPummelPete"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkPummelPete"/>
@@ -432,11 +443,11 @@
 
 				<!-- *** DEEP_CUTS -->
 		<perk name="perkDeepCuts" parent="skillCombatMelee" name_key="perkDeepCutsName" desc_key="perkDeepCutsDesc" icon="ui_game_symbol_deep_cuts">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkDeepCuts"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkDeepCuts"/>
@@ -594,11 +605,11 @@
 
 		<!-- *** SKULL CRUSHER -->
 		<perk name="perkSkullCrusher" parent="skillCombatMelee" name_key="perkSkullCrusherName" desc_key="perkSkullCrusherDesc" icon="ui_game_symbol_sledge">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkSkullCrusher"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkSkullCrusher"/>
@@ -671,11 +682,11 @@
 
 		<!-- *** JAVELIN_MASTER -->
 		<perk name="perkJavelinMaster" parent="skillCombatMelee" name_key="perkJavelinMasterName" desc_key="perkJavelinMasterDesc" icon="ui_game_symbol_spear">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkJavelinMaster"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkJavelinMaster"/>
@@ -744,11 +755,11 @@
 
 		<!-- *** ELECTROCUTIONER -->
 		<perk name="perkElectrocutioner" parent="skillCombatMelee" name_key="perkElectrocutionerName" desc_key="perkElectrocutionerDesc" icon="ui_game_symbol_electric_power">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkElectrocutioner"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkElectrocutioner"/>
@@ -788,11 +799,11 @@
 
 		<!-- *** ARCHERY -->
 		<perk name="perkArchery" parent="skillCombatRanged" name_key="perkArcheryName" desc_key="perkArcheryDesc" icon="ui_game_symbol_archery">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="7" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="7" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkArchery"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkArchery"/>
@@ -827,11 +838,11 @@
 
 		<!-- *** GUNSLINGER -->
 		<perk name="perkGunslinger" parent="skillCombatRanged" max_level="5" name_key="perkGunslingerName" desc_key="perkGunslingerDesc" icon="ui_game_symbol_gunslinger">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="0,5" value="0,1" tags="perkGunslinger"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="0,5" value="0,.5" tags="perkGunslinger"/>
@@ -888,11 +899,11 @@
 
 		<!-- *** BOOMSTICK -->
 		<perk name="perkBoomstick" parent="skillCombatRanged" name_key="perkBoomstickName" desc_key="perkBoomstickDesc" icon="ui_game_symbol_shotgun">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkBoomstick"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkBoomstick"/>
@@ -944,11 +955,11 @@
 
 		<!-- *** DEAD_EYE -->
 		<perk name="perkDeadEye" parent="skillCombatRanged" name_key="perkDeadEyeName" desc_key="perkDeadEyeDesc" icon="ui_game_symbol_map_cursor">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkDeadEye"/>
 				<passive_effect name="WeaponHandling" operation="perc_add" level="1,2,3,4,5" value=".1,.2,.32,.45,.60" tags="perkDeadEye"/>
@@ -987,11 +998,11 @@
 
 		<!-- *** MACHINE_GUNNER -->
 		<perk name="perkMachineGunner" parent="skillCombatRanged" name_key="perkMachineGunnerName" desc_key="perkMachineGunnerDesc" icon="ui_game_symbol_rifle">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkMachineGunner"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkMachineGunner"/>
@@ -1046,11 +1057,11 @@
 
 		<!-- *** TURRETS -->
 		<perk name="perkTurrets" parent="skillCombatRanged" name_key="perkTurretsName" desc_key="perkTurretsDesc" icon="ui_game_symbol_electric_turret">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1,2,3,4,5" value=".125,.25,.375,.5,.5" tags="turretMelee"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="4,5" value="0.1,0.2" tags="perkTurrets"/>
@@ -1092,9 +1103,9 @@
 
 		<!-- *** FLURRY OF STRENGTH -->
 		<perk name="perkFlurryOfStrength" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfStrengthName" desc_key="perkFlurryOfStrengthDesc" icon="ui_game_symbol_knunchuck">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfStrength"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfStrength"/>
@@ -1106,9 +1117,9 @@
 
 		<!-- *** FLURRY OF AGILITY -->
 		<perk name="perkFlurryOfAgility" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfAgilityName" desc_key="perkFlurryOfAgilityDesc" icon="ui_game_symbol_knunchuck">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfAgility"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfAgility"/>
@@ -1120,9 +1131,9 @@
 
 		<!-- *** FLURRY OF FORTITUDE -->
 		<perk name="perkFlurryOfFortitude" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfFortitudeName" desc_key="perkFlurryOfFortitudeDesc" icon="ui_game_symbol_knunchuck">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfFortitude"/>
@@ -1134,9 +1145,9 @@
 
 		<!-- *** FLURRY OF PERCEPTION -->
 		<perk name="perkFlurryOfPerception" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfPerceptionName" desc_key="perkFlurryOfPerceptionDesc" icon="ui_game_symbol_knunchuck">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfPerception"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfPerception"/>
@@ -1148,9 +1159,9 @@
 
 		<!-- *** FLURRY OF INTELLECT -->
 		<perk name="perkFlurryOfIntellect" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfIntellectName" desc_key="perkFlurryOfIntellectDesc" icon="ui_game_symbol_knunchuck">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfIntellect"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfIntellect"/>
@@ -1162,11 +1173,11 @@
 
 		<!-- *** HIDDEN STRIKE -->
 		<perk name="perkHiddenStrike" parent="skillCombatSpecialty" name_key="perkHiddenStrikeName" desc_key="perkHiddenStrikeDesc" icon="ui_game_symbol_sneak_attack">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group name="regular weapons, sledgehammer"> <!-- blades, bows have item bonuses -->
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
@@ -1193,11 +1204,11 @@
 
 			<!-- *** FROM THE SHADOWS -->
 		<perk name="perkFromTheShadows" parent="skillCombatSpecialty" name_key="perkFromTheShadowsName" desc_key="perkFromTheShadowsDesc" icon="ui_game_symbol_bat">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 					<passive_effect name="LightMultiplier" operation="perc_add" level="0,5" value="0,-.65">
@@ -1227,9 +1238,9 @@
 
 		<!-- *** RUN AND GUN -->
 		<perk name="perkRunAndGun" max_level="3" parent="skillCombatSpecialty" name_key="perkRunAndGunName" desc_key="perkRunandGunDesc" icon="ui_game_symbol_run_and_gun">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="SpreadMultiplierHip" operation="perc_add" level="1,2,3" value="-.1,-.17,-.25" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
 				<!-- movement component is in buffReloadMovementPenalty -->
@@ -1241,10 +1252,10 @@
 
 		<!-- *** PENETRATOR -->
 		<perk name="perkPenetrator" max_level="4" parent="skillCombatSpecialty" name_key="perkPenetratorName" desc_key="perkPenetratorDesc" icon="ui_game_symbol_paint_copy_block">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="TargetArmor" operation="perc_add" level="1,2,3,4" value="-.10,-.15,-.2,-.2" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,turretRanged,perkPenetrator,perkArchery"/>
 				<passive_effect name="TargetArmor" operation="perc_add" level="1,2,3,4" value="-.2,-.3,-.4,-.5" tags="perkJavelinMaster"/>
@@ -1262,11 +1273,11 @@
 
 		<!-- *** DEMOLITIONS EXPERT -->
 		<perk name="perkDemolitionsExpert" parent="skillCombatSpecialty" name_key="perkDemolitionsExpertName" desc_key="perkDemolitionsExpertDesc" icon="ui_game_symbol_explosion">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<!-- Increase the chance to find explosives with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="explosivesSkill"/>
@@ -1295,11 +1306,11 @@
 
 		<!-- *** CHARISMATIC_NATURE -->
 		<perk name="perkCharismaticNature" max_level="5" parent="skillCombatSpecialty" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="1" target="selfOtherPlayers" target_tags="ally,party">
 					<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="Equals" value="1"/>
@@ -1336,9 +1347,9 @@
 
 		<!-- *** INFILTRATOR -->
 		<perk name="perkInfiltrator" max_level="3" parent="attLooting" name_key="perkInfiltratorName" desc_key="perkInfiltratorDesc" icon="ui_game_symbol_stealth">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<passive_effect name="TrapDoorTriggerDelay" operation="base_add" level="1,2,3" value=".5,1,2"/>
 				<passive_effect name="LandMineTriggerDelay" operation="base_add" level="1,2,3" value=".5,1,2"/>
@@ -1353,11 +1364,11 @@
 
 		<!-- *** LUCKY LOOTER -->
 		<perk name="perkLuckyLooter" parent="attLooting" name_key="perkLuckyLooterName" desc_key="perkLuckyLooterDesc" icon="ui_game_symbol_shopping_cart">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="LootStage" operation="perc_add" level="1,5" value=".05,.25"/>
 					<!-- LootStage only counts for containers that you open. It does not affect party loot GS. -->
@@ -1382,9 +1393,9 @@
 
 		<!-- *** Treasure Hunter -->
 		<perk name="perkTreasureHunter" max_level="3" parent="attLooting" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<passive_effect name="TreasureBlocksPerReduction" operation="base_add" level="0,1,2,3" value="0,-3,-5,-7"/><!-- base value in quests is 10 -->
 				<passive_effect name="LootQuantity" operation="perc_add" level="1,2,3" value=".1,.2,.3" tags="buriedTreasure"/>
@@ -1396,11 +1407,11 @@
 
 		<!-- *** PACK_MULE -->
 		<perk name="perkPackMule" parent="attLooting" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel01"/></level_requirements>
 			<effect_group>
 				<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4,5" value="3,6,10,14,18"/>
 				<effect_description level="1" desc_key="perkPackMuleRank1Desc" long_desc_key="perkPackMuleRank1LongDesc" />
@@ -1413,10 +1424,10 @@
 
 		<!-- *** PARKOUR -->
 		<perk name="perkParkour" max_level="4" parent="attLooting" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="JumpStrength" operation="perc_add" level="2,3,4" value=".39,.39,.75"/>
 				<!-- .125  is min jump with a broken leg, .16 = 1.5m easy, .175 = 2m barely, .186 = 2m plus a bit, .22 = 2.3m (1.6 + 39%), .276 = juuust 3.3m  (1.6 + 75%) -->
@@ -1431,11 +1442,11 @@
 
 		<!-- *** BETTER BARTER -->
 		<perk name="perkBetterBarter" parent="attLooting" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BarteringBuying" operation="base_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25"/>
 				<passive_effect name="BarteringSelling" operation="base_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25"/>
@@ -1449,10 +1460,10 @@
 
 		<!-- *** DARING_ADVENTURER -->
 		<perk name="perkDaringAdventurer" max_level="4" parent="attLooting" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="TraderStage" operation="base_add" level="1,4" value="10,40"/>
 				<passive_effect name="QuestBonusItemReward" operation="perc_add" level="1,4" value=".05,.20"/> <!-- Bonus Dukes -->
@@ -1466,9 +1477,9 @@
 
 		<!-- *** LOCK PICKING -->
 		<perk name="perkLockPicking" max_level="3" parent="attLooting" name_key="perkLockPickingName" desc_key="perkLockPickingDesc" icon="ui_game_symbol_unlock">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel01"/></level_requirements>
 			<effect_group>
 				<passive_effect name="LockPickTime" operation="perc_subtract" level="1,3" value=".17,.375"/>
 				<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,3" value="1" tags="resourceLockPick"/> -->
@@ -1495,11 +1506,11 @@
 
 		<!-- *** THE HUNTSMAN -->
 		<perk name="perkTheHuntsman" parent="skillSurvivalSustenance" name_key="perkTheHuntsmanName" desc_key="perkTheHuntsmanDesc" icon="ui_game_symbol_archery">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<!-- stone axe, knives, etc do the base_set 1 -->
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="butcherHarvest"/>
@@ -1513,11 +1524,11 @@
 
 		<!-- *** LIVING OFF THE LAND -->
 		<perk name="perkLivingOffTheLand" max_level="3" parent="skillSurvivalSustenance" name_key="perkLivingOffTheLandName" desc_key="perkLivingOffTheLandDesc" icon="ui_game_symbol_tree">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkLivingOffTheLandCrafting"/><!-- fake crafting perk that is used to scale resources -->
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,2,3,4,5" value="1,1,2,3,3" tags="cropHarvest,wildCropsHarvest"/>
@@ -1542,9 +1553,9 @@
 
 		<!-- *** MASTER CHEF -->
 		<perk name="perkMasterChef" max_level="3" parent="skillSurvivalSustenance" name_key="perkMasterChefName" desc_key="perkMasterChefDesc" icon="ui_game_symbol_spatula">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<!-- fake crafting perk that is used to scale resources -->
 				<passive_effect name="CraftingTier" operation="base_set" level="0,3" value="0,3" tags="perkMasterChef"/>
@@ -1569,11 +1580,11 @@
 
 		<!-- *** SLOW METABOLISM / IRON GUT -->
 		<perk name="perkSlowMetabolism" parent="skillSurvivalSustenance" name_key="perkSlowMetabolismName" desc_key="perkSlowMetabolismDesc" icon="ui_game_symbol_stomach">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
 				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
@@ -1592,11 +1603,11 @@
 
 		<!-- *** PAIN TOLERANCE -->
 		<perk name="perkPainTolerance" parent="skillSurvivalWellBeing" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" icon="ui_game_symbol_character">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="GeneralDamageResist" operation="base_add" level="1,5" value=".05,.25"/>
 				<passive_effect name="BuffResistance" operation="base_add" level="1,5" value="0.20,1" tags="buffInjuryStunned01,buffInjuryStunned02"/>
@@ -1610,11 +1621,11 @@
 
 		<!-- *** HEALING FACTOR -->
 		<perk name="perkHealingFactor" parent="skillSurvivalWellBeing" name_key="perkHealingFactorName" desc_key="perkHealingFactorDesc" icon="ui_game_symbol_healing_factor">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<!-- crit hit effects heal rate is assigned in  buffStatusCheck02 -->
 				<!-- You cannot regen without food or water -->
@@ -1631,9 +1642,9 @@
 
 		<!-- *** WELL INSULATED -->
 		<perk name="perkWellInsulated" max_level="3" parent="skillSurvivalWellBeing" name_key="perkWellInsulatedName" desc_key="perkWellInsulatedDesc" icon="ui_game_symbol_temperature">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<passive_effect name="HypothermalResist" operation="base_add" level="1,2,3" value="10,20,20"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" level="1,2,3" value="10,20,20"/>
@@ -1656,9 +1667,9 @@
 
 		<!-- *** RULE ONE CARDIO -->
 		<perk name="perkRuleOneCardio" max_level="3" parent="skillSurvivalWellBeing" name_key="perkRuleOneCardioName" desc_key="perkRuleOneCardioDesc" icon="ui_game_symbol_cardio">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1,3" value="0.1,0.3" tags="running,swimmingRun"/>
 				<effect_description level="1" desc_key="perkRuleOneCardioNameRank1Desc" long_desc_key="perkRuleOneCardioNameRank1LongDesc"/>
@@ -1669,11 +1680,11 @@
 
 		<!-- *** PHYSICIAN -->
 		<perk name="perkPhysician" max_level="5" parent="skillSurvivalWellBeing" name_key="perkPhysicianName" desc_key="perkPhysicianDesc" icon="ui_game_symbol_medical">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<!-- Craft items in the chemical station faster -->
 				<passive_effect name="CraftingTime" operation="perc_add" level="2,3,4,5" value="-.2,-.2,-.4,-.4" tags="chemStationCrafting"/>
@@ -1716,10 +1727,10 @@
 
 		<!-- *** LIGHT ARMOR -->
 		<perk name="perkLightArmor" max_level="4" parent="skillSurvivalArmor" name_key="perkLightArmorName" desc_key="perkLightArmorDesc" icon="ui_game_symbol_light_armor2">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<!-- Stamina/mobility are handled in buffStatusCheck02 -->
 				<passive_effect name="DegradationPerUse" operation="perc_add" level="0,4" value="0,-.66" tags="lightArmorDeg"/>
@@ -1751,10 +1762,10 @@
 
 		<!-- *** HEAVY ARMOR -->
 		<perk name="perkHeavyArmor" max_level="4" parent="skillSurvivalArmor" name_key="perkHeavyArmorName" desc_key="perkHeavyArmorDesc" icon="ui_game_symbol_armor_iron">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<!-- Stamina/mobility are handled in buffStatusCheck02 -->
 				<passive_effect name="DegradationPerUse" operation="perc_add" level="0,4" value="0,-.66" tags="heavyArmorDeg"/>
@@ -1788,11 +1799,11 @@
 
 		<!-- *** MINER69R -->
 		<perk name="perkMiner69r" parent="attCraftingSkills" name_key="perkMiner69rName" desc_key="perkMiner69rDesc" icon="ui_game_symbol_mining">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".3,1.5" tags="perkMiner69r"/>
 				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkMiner69r"/>
@@ -1829,11 +1840,11 @@
 
 		<!-- *** MOTHER LODE -->
 		<perk name="perkMotherLode" parent="attCraftingSkills" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 
 			<effect_group>
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="oreWoodHarvest"/>
@@ -1851,11 +1862,11 @@
 
 		<!-- *** SALVAGE_OPERATIONS -->
 		<perk name="perkSalvageOperations" parent="attCraftingSkills" name_key="perkSalvageOperationsName" desc_key="perkSalvageOperationsDesc" icon="ui_game_symbol_scrap">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.1,-.5" tags="salvageScrap"/><!-- does not work on scrapping -->
 				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".2,1" tags="perkSalvageOperations"/>
@@ -1900,11 +1911,11 @@
 
 		<!-- *** ENGINEERING -->
 		<perk name="perkEngineering" parent="attCraftingSkills" name_key="perkEngineeringName" desc_key="perkEngineeringDesc" icon="ui_game_symbol_workbench">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<!-- fake crafting perk that is used to scale resources -->
 				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkEngineering"/>
@@ -1930,11 +1941,11 @@
 
 		<!-- *** Electrical Engineering -->
 		<perk name="perkElectricalEngineering" parent="attCraftingSkills" name_key="perkElectricalEngineeringName" desc_key="perkElectricalEngineeringDesc" icon="ui_game_symbol_electric_power">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<!-- fake crafting perk that is used to scale resources -->
 				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkElectricalEngineering"/>
@@ -1972,9 +1983,9 @@
 
 		<!-- *** HANDY MAN-->
 		<perk name="perkHandyMan" max_level="3" parent="attCraftingSkills" name_key="perkHandyManName" desc_key="perkHandyManDesc" icon="ui_game_symbol_resource">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<!-- fake crafting perk that is used to scale resources -->
 				<passive_effect name="CraftingTier" operation="base_set" level="0,3" value="0,3" tags="perkHandyMan"/>
@@ -1999,11 +2010,11 @@
 
 		<!-- *** GREASE_MONKEY -->
 		<perk name="perkGreaseMonkey" parent="attCraftingSkills" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericPoints01"/></level_requirements>
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
 				<!-- fake crafting perk that is used to scale resources or quality like on carBattery -->
 				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkGreaseMonkey"/>
