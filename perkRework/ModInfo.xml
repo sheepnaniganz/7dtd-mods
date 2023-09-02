@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
-	<Name value="perksRework"/>
+	<Name value="perkRework"/>
 	<DisplayName value="Rework Perks" />
 	<Description value="Reworks the perk system"/>
 	<Author value="sheepnaniganz"/>

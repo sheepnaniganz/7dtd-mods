@@ -3,7 +3,7 @@
 	<Name value="customUI" />
 	<DisplayName value="Sheepnaniganz Custom UI" />
 	<Description value="This modlet adds the HP bar, toolbelt numbers, compass stats, and water/food bars." />
-	<Author value="Sheepnaniganz" />
-	<Version value="1.0.0.1" />
+	<Author value="sheepnaniganz" />
+	<Version value="1.0.0" />
 	<Website value="" />
 </xml>

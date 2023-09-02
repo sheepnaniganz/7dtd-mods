@@ -3,6 +3,6 @@
   <Name value="longerLootbags" />
   <DisplayName value="Longer Lootbags" />
   <Description value="Decreases the decay rate on zombie loot bags" />
-  <Author value="Sheepnaniganz" />
+  <Author value="sheepnaniganz" />
   <Version value="1.0.0" />
 </xml>

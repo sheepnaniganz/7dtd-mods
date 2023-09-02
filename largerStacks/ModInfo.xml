@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<Name value="largerStacks" />
-	<DisplayName value="Sheepnaniganz Larger Item Stacks" />
+	<DisplayName value="Larger Item Stacks" />
 	<Description value="Change the max stack amount for items." />
-	<Author value="Sheepnaniganz" />
+	<Author value="sheepnaniganz" />
 	<Version value="1.0.0.0" />
-	<Website value="" />
 </xml>

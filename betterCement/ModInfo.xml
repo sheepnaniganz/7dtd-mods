@@ -2,7 +2,7 @@
 <xml>
   <Name value="betterCement" />
   <DisplayName value="Better Cement" />
-  <Description value="Create 'Cement Mix' directly in the cement mixer." />
+  <Description value="Create cement mix in the cement mixer with reworked recipe" />
   <Author value="sheepnaniganz" />
   <Version value="1.0.0" />
 </xml>

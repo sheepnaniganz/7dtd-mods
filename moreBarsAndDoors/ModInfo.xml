@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<xml>
-		<Name value="barsDoors" />
+		<Name value="moreBarsAndDoors" />
 		<DisplayName value="Custom Bars and Doors" />
 		<Description value="Adds recipes for some doors and bars." />
 		<Author value="sheepnaniganz" />

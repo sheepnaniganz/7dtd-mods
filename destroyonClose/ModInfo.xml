@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Name value="destroyonClose" />
-	<DisplayName value="Sheepnaniganz Destroy on Close" />
-	<Description value="Destroy boxes on Close" />
+	<Name value="destroyOnClose" />
+	<DisplayName value="Destroy on Close" />
+	<Description value="Destroy more containers on close" />
 	<Author value="Sheepnaniganz" />
-	<Version value="1.0.0.0" />
-	<Website value="" />
+	<Version value="1.0.0" />
 </xml>

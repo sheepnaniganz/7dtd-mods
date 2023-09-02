@@ -2,7 +2,7 @@
 <xml>
 	<Name value="decorRecipes"/>
 	<DisplayName value="Custom Decor Recipes" />
-	<Description value="Add recipes for decor blocks"/>
-	<Author value="Sheepnaniganz"/>
-	<Version value="1.0"/>
+	<Description value="Add recipes for moredecor blocks"/>
+	<Author value="sheepnaniganz"/>
+	<Version value="1.0.0"/>
 </xml>
