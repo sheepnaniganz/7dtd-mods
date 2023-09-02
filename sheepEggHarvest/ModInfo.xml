@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<xml>
-		<ModInfo>
-			<Name value="Egg Harvest"/>
-			<Description value="Harvesting Chickens sometimes gives eggs."/>
-			<Author value="sheepnaniganz"/>
-			<Version value="A20"/>
-		</ModInfo>
-	</xml>

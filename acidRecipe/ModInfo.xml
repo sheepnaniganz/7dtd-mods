@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="acidRecipe"/>
+	<DisplayName value="Acid Recipe" />
+	<Description value="Add recipe for acid"/>
+	<Author value="Sheepnaniganz"/>
+	<Version value="1.0"/>
+</xml>

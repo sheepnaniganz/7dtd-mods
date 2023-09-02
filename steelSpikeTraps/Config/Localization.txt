@@ -1,0 +1,4 @@
+Key,File,Type,english
+trapSpikesSteelDmg0,blocks,Trap,Steel Spikes Trap
+trapSpikesSteelDmg1,blocks,Trap,Steel Spikes Trap 1
+trapSpikesSteelDmg2,blocks,Trap,Steel Spikes Trap 2

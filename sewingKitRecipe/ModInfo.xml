@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="sewingKitRecipe"/>
+	<DisplayName value="Sewing Kit Recipe" />
+	<Description value="Add recipe for sewing kits"/>
+	<Author value="Sheepnaniganz"/>
+	<Version value="1.0"/>
+</xml>

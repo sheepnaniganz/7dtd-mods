@@ -1,0 +1,7 @@
+<configs>
+	<!--# Loot Cleanup-->
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='mailbox']" name="destroy_on_close">empty</setattribute>  <!-- mailbox -->
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='PObox']" name="destroy_on_close">empty</setattribute>  <!-- po box -->
+  <setattribute xpath="/lootcontainers/lootcontainer[@name='cardboardBox']" name="destroy_on_close">true</setattribute>  <!-- cardboard box -->
+	<!--## Loot Cleanup-->
+</configs>

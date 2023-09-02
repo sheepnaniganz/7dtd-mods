@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="destroyonClose" />
+	<DisplayName value="Sheepnaniganz Destroy on Close" />
+	<Description value="Destroy boxes on Close" />
+	<Author value="Sheepnaniganz" />
+	<Version value="1.0.0.0" />
+	<Website value="" />
+</xml>

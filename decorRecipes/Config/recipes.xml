@@ -1,0 +1,63 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="woodDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="30"/>
+			<ingredient name="resourcePaper" count="10"/>
+		</recipe>
+
+		<recipe name="metalDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
+
+		<recipe name="mixedDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceForgedIron" count="5"/>
+		</recipe>
+
+		<recipe name="polymerDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="20"/>
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+
+		<recipe name="concreteDecoBlockVariantHelper" count="1" craft_time="60" craft_area="cementMixer" tags="cementMixerCrafting">
+			<ingredient name="resourceConcreteMix" count="10"/>
+		</recipe>
+
+		<recipe name="electricDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+
+		<recipe name="glassDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBrokenGlass" count="20"/>
+			<ingredient name="resourceScrapIron" count="20"/>
+		</recipe>
+
+		<recipe name="candelabraLight" count="1" craft_area="workbench">
+            <ingredient name="resourceScrapBrass" count="50"/>
+            <ingredient name="candle" count="3"/>
+        </recipe>
+
+		<recipe name="decoEmberPileFire" count="1">
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceCoal" count="15"/>
+        </recipe>
+
+		<recipe name="decoEmberPileFire2" count="1">
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceCoal" count="15"/>
+        </recipe>
+
+		<recipe name="modularFireWoodStackCFire" count="1">
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceCoal" count="5"/>
+        </recipe>
+
+		<recipe name="cntWoodBurningStoveFire" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="15"/>
+      <ingredient name="resourceWood" count="10"/>
+      <ingredient name="resourceCoal" count="15"/>
+		</recipe>
+	</append>
+</configs>

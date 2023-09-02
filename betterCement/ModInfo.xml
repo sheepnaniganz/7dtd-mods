@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="betterCement" />
+  <DisplayName value="Better Cement" />
+  <Description value="Create 'Cement Mix' directly in the cement mixer." />
+  <Author value="sheepnaniganz" />
+  <Version value="1.0.0" />
+</xml>

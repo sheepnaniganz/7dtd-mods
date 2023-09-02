@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="arrowBoltConversion"/>
+	<DisplayName value="Arrow and Bolt Conversion Recipes" />
+	<Description value="Add recipes for converting to and from bolts and arrows"/>
+	<Author value="Sheepnaniganz"/>
+	<Version value="1.0"/>
+</xml>

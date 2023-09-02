@@ -1,0 +1,75 @@
+<configs>
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="trapSpikesSteelDmg0"/>
+			<property name="Item" value="resourceForgedSteel"/>
+			<property name="ItemCount" value="10"/>
+			<property name="UpgradeHitCount" value="4"/>
+		</property>
+	</append>
+
+	<append xpath="/blocks">
+		<block name="trapSpikesScrapSteelMaster">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+			<property name="Damage" value="66"/>
+			<property name="Damage_received" value="66"/>
+			<property name="Material" value="MtrapSpikesSteel"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="MaxDamage" value="264"/>
+			<property name="Shape" value="ModelEntity"/>
+   		<property name="Model" value="Entities/traps/ironSpikesTrapPrefab"/>
+			<property name="TintColor" value="ccccff"/>
+			<property name="IsTerrainDecoration" value="false"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value="movement,melee"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="Path" value="solid"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="2"/>
+			</property>
+			<property name="CustomUpgradeSound" value="place_block_metal"/>
+			<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+			<drop event="Fall" count="0"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="DescriptionKey" value="trapSpikesGroupDesc"/>
+			<property name="EconomicValue" value="60"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property name="FilterTags" value="MC_building,SC_traps"/>
+			<property name="SortOrder1" value="70g1"/>
+		</block>
+
+		<block name="trapSpikesSteelDmg2">
+			<property name="Extends" value="trapSpikesScrapSteelMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Model" value="Entities/traps/ironSpikesTrap2BloodPrefab"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="trapSpikesSteelDmg0"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="1"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+
+		<block name="trapSpikesSteelDmg1">
+			<property name="Extends" value="trapSpikesScrapSteelMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Model" value="Entities/traps/ironSpikesTrap1BloodPrefab"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="trapSpikesSteelDmg0"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="1"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="DowngradeBlock" value="trapSpikesSteelDmg2"/>
+		</block>
+
+		<block name="trapSpikesSteelDmg0">
+			<property name="Extends" value="trapSpikesScrapSteelMaster"/>
+			<property name="CustomIcon" value="trapSpikesScrapIronMaster"/>
+			<property name="CustomIconTint" value="ccccff"/>
+			<property name="DowngradeBlock" value="trapSpikesSteelDmg1"/>
+		</block>
+	</append>
+</configs>

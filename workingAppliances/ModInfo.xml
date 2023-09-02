@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="workingAppliances" />
+	<DisplayName value="Working Appliances" />
+	<Description value="Functional versions of some appliances" />
+	<Author value="sheepnaniganz" />
+	<Version value="1.0.0" />
+</xml>

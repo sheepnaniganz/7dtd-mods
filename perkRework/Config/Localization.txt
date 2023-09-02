@@ -1,0 +1,50 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+attSurvivalDesc,progression,Attribute,,,"To live, is to suffer. To survive, well, that's to find meaning in the suffer."
+attSurvivalName,progression,Attribute,,,Survival
+
+perkHandyManDesc,progression,perk Str,,,"Learn how to become a Handy Man! You have a keen eye for tools and building materials."
+perkHandyManName,progression,perk Str,,,Handy Man
+perkHandyManRank1Desc,progression,perk Str,,,Amateur
+perkHandyManRank1LongDesc,progression,perk Str,,,"You have no idea what you are doing, but you are willing to give it a shot."
+perkHandyManRank2Desc,progression,perk Str,,,DIY Enthusiast
+perkHandyManRank2LongDesc,progression,perk Str,,,"You have learned a thing or to about knocking shit together."
+perkHandyManRank3Desc,progression,perk Str,,,Professional
+perkHandyManRank3LongDesc,progression,perk Str,,,"You are the literal Mr. Fix-it."
+
+perkEngineeringDesc,progression,perk Int,,,"Engineer items faster with reduced costs at workstations."
+perkEngineeringName,progression,perk Int,,,Engineering
+perkEngineeringRank1Desc,progression,perk Int,,,Apprentice
+perkEngineeringRank1LongDesc,progression,perk Int,,,"You are now out of the stone age and an apprentice Engineer!\nItems craft 20% faster at the forge.\nCraft glue cheaper."
+perkEngineeringRank2Desc,progression,perk Int,,,Tinkerer
+perkEngineeringRank2LongDesc,progression,perk Int,,,"The long hours tinkering on projects is starting to pay dividends!\nItems craft 20% faster at workbenches and cement mixers."
+perkEngineeringRank3Desc,progression,perk Int,,,Craftsman
+perkEngineeringRank3LongDesc,progression,perk Int,,,"You really know your way around the workshop and can build just about anything you set your mind to!\nAll forge recipes cost 10% less, crafting Forged Steel costs 15% less."
+perkEngineeringRank4Desc,progression,perk Int,,,Engineer
+perkEngineeringRank4LongDesc,progression,perk Int,,,"MacGyver has nothing on you!\nAll forge recipes cost 15% less, crafting Forged Steel costs 25% less."
+perkEngineeringRank5Desc,progression,perk Int,,,Advanced Engineer
+perkEngineeringRank5LongDesc,progression,perk Int,,,"You are now an Advanced Engineer and would make Archimedes jealous.\nAll forge recipes cost 20% less, crafting Forged Steel costs 35% less."
+
+perkElectricalEngineeringDesc,progression,perk Int,,,Learn the ins and out of electrical assembly!
+perkElectricalEngineeringName,progression,perk Int,,,Electrical Engineering
+perkElectricalEngineeringRank1Desc,progression,perk Int,,,Sparky
+perkElectricalEngineeringRank1LongDesc,progression,perk Int,,,"Twist a few wires together and voila. Circuitry! Zzzapp..\nGain 15% XP from electrical trap kills."
+perkElectricalEngineeringRank2Desc,progression,perk Int,,,Go Juicer
+perkElectricalEngineeringRank2LongDesc,progression,perk Int,,,"This one goes there, that one goes there...\nGain 30% XP from electrical trap kills."
+perkElectricalEngineeringRank3Desc,progression,perk Int,,,Electric-trickery
+perkElectricalEngineeringRank3LongDesc,progression,perk Int,,,"You could probably teach a class on Electronics 101 by this point.\nGain 45% XP from electrical trap kills.\n Electrical device crafting costs 15% less"
+perkElectricalEngineeringRank4Desc,progression,perk Int,,,Inventor
+perkElectricalEngineeringRank4LongDesc,progression,perk Int,,,"You are the Nikola Tesla of the apocalypse!\nGain 60% XP from electrical trap kills.\n Electrical device crafting costs 25% less"
+perkElectricalEngineeringRank5Desc,progression,perk Int,,,Genius
+perkElectricalEngineeringRank5LongDesc,progression,perk Int,,,"Your next step is world domination..\nGain 75% XP from electrical trap kills.\n Electrical device crafting costs 35% less"
+
+craftingElectricianDesc,progression,Attribute,,,Reading [DECEA3]Wiring 101[-] will unlock various tiers of electrical items.\nBoost loot odds with [DECEA3]Electronics[-]
+
+craftingRepairToolsDesc,progression,Attribute,,,Reading [DECEA3]Handy Land[-] will increase the quality of crafted repair tools.\nBoost loot odds with [DECEA3]Handy Man[-]
+
+craftingRoboticsDesc,progression,Attribute,,,Reading [DECEA3]Tech Planet[-] will increase the quality of crafted robotics. Boost loot odds\nwith [DECEA3]Robotics Inventor[-]
+
+craftingTrapsDesc,progression,Attribute,,,Reading [DECEA3]Electrical Traps[-] will unlock various tiers of traps.\nBoost loot odds with [DECEA3]Electronics[-]
+
+craftingWorkstationsDesc,progression,Attribute,,,Reading [DECEA3]Forge Ahead[-] will unlock various tiers of workstations and their tools. Boost loot odds\nwith [DECEA3]Engineering[-]
+
