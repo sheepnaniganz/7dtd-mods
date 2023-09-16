@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="betterForges"/>
+	<DisplayName value="Better Forges"/>
+	<Description value="Adds a slot to the Forge for smelting"/>
+	<Author value="sheepnaniganz"/>
+	<Version value="1.0.0"/>
+</xml>

@@ -1,63 +1,108 @@
 <configs>
 	<append xpath="/recipes">
-		<recipe name="woodDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="woodDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceWood" count="30"/>
 			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceNails" count="4"/>
 		</recipe>
 
-		<recipe name="metalDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="metalDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceForgedIron" count="10"/>
 			<ingredient name="resourceMechanicalParts" count="10"/>
 		</recipe>
 
-		<recipe name="mixedDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="mixedDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceNails" count="4"/>
 		</recipe>
 
-		<recipe name="polymerDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="polymerDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceScrapPolymers" count="20"/>
 			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceDuctTape" count="2"/>
 		</recipe>
 
 		<recipe name="concreteDecoBlockVariantHelper" count="1" craft_time="60" craft_area="cementMixer" tags="cementMixerCrafting">
 			<ingredient name="resourceConcreteMix" count="10"/>
+			<ingredient name="resourceScrapIron" count="20"/>
 		</recipe>
 
-		<recipe name="electricDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="electricDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceForgedIron" count="5"/>
 			<ingredient name="resourceElectricParts" count="10"/>
 		</recipe>
 
-		<recipe name="glassDecoBlockVariantHelper" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="glassDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceBrokenGlass" count="20"/>
 			<ingredient name="resourceScrapIron" count="20"/>
 		</recipe>
 
-		<recipe name="candelabraLight" count="1" craft_area="workbench">
-            <ingredient name="resourceScrapBrass" count="50"/>
-            <ingredient name="candle" count="3"/>
-        </recipe>
+		<recipe name="candelabraLight" count="1" craft_area="tableSaw">
+				<ingredient name="resourceScrapBrass" count="50"/>
+				<ingredient name="candle" count="3"/>
+		</recipe>
 
 		<recipe name="decoEmberPileFire" count="1">
-            <ingredient name="resourceWood" count="10"/>
-            <ingredient name="resourceCoal" count="15"/>
-        </recipe>
+				<ingredient name="resourceWood" count="10"/>
+				<ingredient name="resourceCoal" count="15"/>
+		</recipe>
 
 		<recipe name="decoEmberPileFire2" count="1">
-            <ingredient name="resourceWood" count="10"/>
-            <ingredient name="resourceCoal" count="15"/>
-        </recipe>
+				<ingredient name="resourceWood" count="10"/>
+				<ingredient name="resourceCoal" count="15"/>
+		</recipe>
 
 		<recipe name="modularFireWoodStackCFire" count="1">
-            <ingredient name="resourceWood" count="10"/>
-            <ingredient name="resourceCoal" count="5"/>
-        </recipe>
+				<ingredient name="resourceWood" count="10"/>
+				<ingredient name="resourceCoal" count="5"/>
+		</recipe>
 
-		<recipe name="cntWoodBurningStoveFire" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="cntWoodBurningStoveFire" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceForgedIron" count="15"/>
       <ingredient name="resourceWood" count="10"/>
       <ingredient name="resourceCoal" count="15"/>
 		</recipe>
+
+    <recipe name="tableSaw" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceForgedIron" count="25"/>
+      <ingredient name="resourceMechanicalParts" count="20"/>
+      <ingredient name="resourceElectricParts" count="10"/>
+      <ingredient name="resourceSpring" count="4"/>
+    </recipe>
 	</append>
+
+	<setattribute xpath="//recipe
+[
+@name='appliancesVariantHelper'
+or @name='bed02'
+or @name='shuttersWoodBlockVariantHelper'
+or @name='candleTableLightPlayer'
+or @name='cntMailBox01VariantHelper'
+or @name='cntMailBox02VariantHelper'
+or @name='cntMailBox03VariantHelper'
+or @name='cntWoodFurnitureBlockVariantHelper'
+or @name='cntWoodFurnitureBlockVariantHelper2'
+or @name='woodSignBlockVariantHelper'
+or @name='sinksToiletsBlockVariantHelper'
+or @name='flagThick44BlockVariantHelper'
+or @name='officeChair01'
+or @name='oldChair1VariantHelper'
+or @name='pictureVariantHelper'
+or @name='sectionalLeatherCouchSofaBlockVariantHelper'
+or @name='sectionalPlaidCouchSofaBlockVariantHelper'
+or @name='couchModernBlockVariantHelper'
+or @name='couchUglySingleBlockVariantHelper'
+or @name='couchUglySmallBlockVariantHelper'
+or @name='couchUglyLargeBlockVariantHelper'
+]" name="crafting_area">tableSaw</setattribute>
+
+	<set xpath="//recipe
+[
+@name='shuttersSteelBlockVariantHelper'
+@name='metalFurnitureBlockVariantHelper'
+@name='endTableLamp'
+@name='lanternDecorLightBlockVariantHelper'
+@name='tvBlockVariantHelper'
+]/crafting_area/@value">tableSaw</set>
 </configs>

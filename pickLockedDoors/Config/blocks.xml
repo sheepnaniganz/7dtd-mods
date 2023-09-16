@@ -1,0 +1,75 @@
+<configs>
+  <append xpath="//block
+[
+@name='oldWoodDoor'
+or or @name='oldWoodDoorDouble'
+or @name='cellarDoorDoubleWood'
+or @name='cellarDoorDoubleIron'
+or @name='cellarDoorDoubleSteel'
+or @name='exteriorHouseDoorWhite'
+or @name='exteriorHouseDoorDoubleWhite'
+or @name='exteriorHouseDoorSideLightSingleWhite'
+or @name='exteriorHouseDoorSideLightWhite'
+or @name='exteriorHouseDoorOldWhite'
+or @name='exteriorHouseDoorDoubleOldWhite'
+or @name='exteriorScreenDoor'
+or @name='houseSlidingDoorWhite'
+or @name='frenchDoorWhite'
+or @name='frenchDoorDoubleWhite'
+or @name='interiorHouseDoorWhite'
+or @name='interiorHouseDoorDoubleWhite'
+or @name='interiorDoorOldWhite'
+or @name='interiorDoorOldDoubleWhite'
+or @name='commercialGlassDoor'
+or @name='commercialBulletproofGlassDoor'
+or @name='commercialGlassDoorDouble'
+or @name='commercialBulletproofGlassDoorDouble'
+or @name='commercialSlidingDoor'
+or @name='commercialBulletproofSlidingDoor'
+or @name='commercialDoorV1White'
+or @name='commercialDoorDoubleV1White'
+or @name='commercialDoorV2White'
+or @name='commercialDoorDoubleV2White'
+or @name='commercialDoorV3White'
+or @name='commercialDoorDoubleV3White'
+or @name='commercialDoorV4White'
+or @name='commercialDoorDoubleV4White'
+or @name='trailerDoorWhite'
+or @name='woodenGarageDoor3x3White'
+or @name='woodenGarageDoor4x3White'
+or @name='woodenGarageDoor5x3White'
+or @name='rollUpDoor3x3White'
+or @name='rollUpDoor5x4White'
+or @name='rollUpDoor7x4White'
+or @name='woodHatch'
+or @name='manholeHatch'
+]">
+    <property name="LockPickItem" value="resourceLockPick"/>
+    <property name="LockPickTime" value="15"/>
+    <property name="LockPickBreakChance" value="0.75"/>
+  </append>
+    <append xpath="//block
+[
+@name='jailDoorWhite'
+or @name='jailDoorDoubleWhite'
+or @name='jailBarsWhite'
+or @name='ironDoorWhite'
+or @name='ironDoorDoubleWhite'
+or @name='vaultDoor01'
+or @name='vaultDoor01Double'
+or @name='ironGarageDoorWhite'
+or @name='steelGarageDoor3x3White'
+or @name='steelGarageDoor4x3White'
+or @name='steelGarageDoor5x3White'
+or @name='rollUpGate3x3White'
+or @name='rollUpGate4x3White'
+or @name='rollUpGate5x3White'
+or @name='ironHatchWhite'
+or @name='vaultHatch01'
+or @name='manholeHatch'
+]">
+    <property name="LockPickItem" value="resourceLockPick"/>
+    <property name="LockPickTime" value="20"/>
+    <property name="LockPickBreakChance" value="0.75"/>
+  </append>
+</configs>

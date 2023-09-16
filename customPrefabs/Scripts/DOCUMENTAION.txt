@@ -1,0 +1,66 @@
+poi-scout.py
+------------
+
+Usage: ./poi-scout.py [directory]
+Example: ./poi-scout.py ../Prefabs/POIs/
+Results: A list of all blocks found in all POIs will be produced.
+
+The script examines all POI files in a directory and compiles a list of block
+names and a count of how many blocks of those types are in each POI. This is a
+handy tool for finding blocks that TFP has discontinued or figuring out which
+POIs contain custom blocks.
+
+
+tag-report.py
+-------------
+
+Usage: ./tag-report.py [directory]
+Example: ./tag-report.py ../Prefabs/POIs/
+Results: Lists the tags for each POI
+
+This utility was written to help Stallionsden look for issues in the CompoPack
+but it is handy for all sorts of reasons.
+
+
+teragon-scout.py
+-----------------
+
+Usage: ./teragon-scout.py
+Results: Teragon/ZZTong-Prefabs-Property-List.txt
+
+The script builds a prefab property list (data file) appropriate for use with
+Teragon. The script builds the data file based on the contents of the XML
+files for each POI, Part, or Tile found in the modlet.
+
+
+validate-modlet.py
+------------------
+
+Usage: ./validate-modlet.py
+Results: Prints a list of missing POI, Part, Tile, and Decoration files.
+
+This script is a handy check to run prior to a release as it will tell you if
+you are missing mesh files, or whatever you might have forgotten to generate
+for a new POI, Part, Tile, or Decoration.
+
+
+zombie-analysis.py
+------------------
+
+Usage: ./zombie-analysis.py [directory]
+Example: ./zombie-analysis.py ../Prefabs/POIs/
+Results: Tells you the number of zombie volumes and range of zombies.
+
+This is a handy script for making a CSV that will show zombie volume densities
+to compare for matching up the zombie challenge with the POI tier.
+
+
+zz2cp.py
+--------
+
+Usage: ./zz2cp.py
+Results: A directory called CP-Export with renamed Prefabs and Config files.
+
+This script is intended to make it easier to submit a bunch of changes to the
+CompoPack. It saves the CP folks time in that they do not need to spend a
+bunch of their time renaming my files.

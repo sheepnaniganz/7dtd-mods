@@ -1,4 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configs>
-    <!-- Player dropped backpack-->
-    <set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">8,10</set>
+    <!-- *** Adjust Player Dropped Backpack Size -->
+    <set xpath="//lootcontainer[@name='playerBackpack']/@size">8,10</set>
 </configs>

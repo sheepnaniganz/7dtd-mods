@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="betterNails" />
+		<Description value="Adds nails to recipes and harvests of some wooden blocks" />
+		<Author value="sheepnaniganz" />
+		<Version value="1.0.0" />
+	</ModInfo>
+</xml>

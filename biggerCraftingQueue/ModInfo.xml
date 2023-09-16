@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="biggerCraftingQueue" />
+  <DisplayName value="Bigger Crafting Queue" />
+  <Description value="Increases the size of the player crafting queue to 5" />
+  <Author value="sheepnaniganz" />
+  <Version value="1.0.0" />
+</xml>

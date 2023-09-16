@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configs>
-	<set xpath="/buffs/buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
-	<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
-	<set xpath="/buffs/buff[@name='buffEncumberedInv']/effect_group/triggered_effect[@operation='multiply']/@value">0.01</set>
+	<!-- *** Change Encumbered to Match New Backpack Size -->
+	<set xpath="//buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+	<set xpath="///buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+	<set xpath="//buff[@name='buffEncumberedInv']/effect_group/triggered_effect[@operation='multiply']/@value">0.01</set>
 </configs>

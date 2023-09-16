@@ -1,91 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-	<set xpath="/progression/level/@max_level">500</set>
-	<set xpath="/progression/level/@exp_to_level">7500</set>
-	<set xpath="/progression/level/@experience_multiplier">1.02</set>
-	<set xpath="/progression/level/@clamp_exp_cost_at_level">75</set>
+	<!-- *** Set Default Level Values *** -->
+	<set xpath="//level/@max_level">500</set>
+	<set xpath="//level/@exp_to_level">7500</set>
+	<set xpath="//level/@experience_multiplier">1.02</set>
+	<set xpath="//level/@clamp_exp_cost_at_level">75</set>
 
-	<!-- Remove Perk Categories -->
-	<remove xpath="/progression/attributes/attribute[@name='attPerception']"/>
-	<remove xpath="/progression/attributes/attribute[@name='attStrength']"/>
-	<remove xpath="/progression/attributes/attribute[@name='attFortitude']"/>
-	<remove xpath="/progression/attributes/attribute[@name='attAgility']"/>
-	<remove xpath="/progression/attributes/attribute[@name='attIntellect']"/>
 
-	<!-- Remove Skill Categories -->
-	<remove xpath="/progression/skills/skill[@name='skillPerceptionCombat']"/>
-	<remove xpath="/progression/skills/skill[@name='skillPerceptionGeneral']"/>
-	<remove xpath="/progression/skills/skill[@name='skillPerceptionScavenging']"/>
-	<remove xpath="/progression/skills/skill[@name='skillStrengthCombat']"/>
-	<remove xpath="/progression/skills/skill[@name='skillStrengthGeneral']"/>
-	<remove xpath="/progression/skills/skill[@name='skillStrengthConstruction']"/>
-	<remove xpath="/progression/skills/skill[@name='skillFortitudeCombat']"/>
-	<remove xpath="/progression/skills/skill[@name='skillFortitudeSurvival']"/>
-	<remove xpath="/progression/skills/skill[@name='skillFortitudeRecovery']"/>
-	<remove xpath="/progression/skills/skill[@name='skillAgilityCombat']"/>
-	<remove xpath="/progression/skills/skill[@name='skillAgilityAthletics']"/>
-	<remove xpath="/progression/skills/skill[@name='skillAgilityStealth']"/>
-	<remove xpath="/progression/skills/skill[@name='skillIntellectCombat']"/>
-	<remove xpath="/progression/skills/skill[@name='skillIntellectInfluence']"/>
-	<remove xpath="/progression/skills/skill[@name='skillIntellectCraftsmanship']"/>
+	<!--
+	* |###########################################################################################
+	* | Remove Default Progression
+	* |###########################################################################################
+	-->
 
-	<!-- Remove All Perks -->
-	<remove xpath="/progression/perks/perk[@name='perkDeadEye']"/>
-	<remove xpath="/progression/perks/perk[@name='perkDemolitionsExpert']"/>
-	<remove xpath="/progression/perks/perk[@name='perkJavelinMaster']"/>
-	<remove xpath="/progression/perks/perk[@name='perkFlurryOfPerception']"/>
-	<remove xpath="/progression/perks/perk[@name='perkInfiltrator']"/>
-	<remove xpath="/progression/perks/perk[@name='perkAnimalTracker']"/>
-	<remove xpath="/progression/perks/perk[@name='perkPenetrator']"/>
-	<remove xpath="/progression/perks/perk[@name='perkLuckyLooter']"/>
-	<remove xpath="/progression/perks/perk[@name='perkTreasureHunter']"/>
-	<remove xpath="/progression/perks/perk[@name='perkSalvageOperations']"/>
 
-	<remove xpath="/progression/perks/perk[@name='perkBoomstick']"/>
-	<remove xpath="/progression/perks/perk[@name='perkPummelPete']"/>
-	<remove xpath="/progression/perks/perk[@name='perkSkullCrusher']"/>
-	<remove xpath="/progression/perks/perk[@name='perkFlurryOfStrength']"/>
+	<!--
+	* |===================================================================================
+	* | Remove Attributes
+	* |===================================================================================
+	-->
+	<remove xpath="//attributes/attribute[@name='attPerception']"/>
+	<remove xpath="//attributes/attribute[@name='attStrength']"/>
+	<remove xpath="//attributes/attribute[@name='attFortitude']"/>
+	<remove xpath="//attributes/attribute[@name='attAgility']"/>
+	<remove xpath="//attributes/attribute[@name='attIntellect']"/>
 
-	<remove xpath="/progression/perks/perk[@name='perkHeavyArmor']"/>
-	<remove xpath="/progression/perks/perk[@name='perkPackMule']"/>
-	<remove xpath="/progression/perks/perk[@name='perkMasterChef']"/>
-	<remove xpath="/progression/perks/perk[@name='perkMiner69r']"/>
-	<remove xpath="/progression/perks/perk[@name='perkMotherLode']"/>
 
-	<remove xpath="/progression/perks/perk[@name='perkBrawler']"/>
-	<remove xpath="/progression/perks/perk[@name='perkMachineGunner']"/>
-	<remove xpath="/progression/perks/perk[@name='perkFlurryOfFortitude']"/>
-	<remove xpath="/progression/perks/perk[@name='perkTheHuntsman']"/>
-	<remove xpath="/progression/perks/perk[@name='perkWellInsulated']"/>
-	<remove xpath="/progression/perks/perk[@name='perkLivingOffTheLand']"/>
-	<remove xpath="/progression/perks/perk[@name='perkPainTolerance']"/>
-	<remove xpath="/progression/perks/perk[@name='perkHealingFactor']"/>
-	<remove xpath="/progression/perks/perk[@name='perkSlowMetabolism']"/>
-	<remove xpath="/progression/perks/perk[@name='perkRuleOneCardio']"/>
+	<!--
+	* |===================================================================================
+	* | Remove Skills
+	* |===================================================================================
+	-->
+	<remove xpath="//skills/skill[@name='skillPerceptionCombat']"/>
+	<remove xpath="//skills/skill[@name='skillPerceptionGeneral']"/>
+	<remove xpath="//skills/skill[@name='skillPerceptionScavenging']"/>
+	<remove xpath="//skills/skill[@name='skillStrengthCombat']"/>
+	<remove xpath="//skills/skill[@name='skillStrengthGeneral']"/>
+	<remove xpath="//skills/skill[@name='skillStrengthConstruction']"/>
+	<remove xpath="//skills/skill[@name='skillFortitudeCombat']"/>
+	<remove xpath="//skills/skill[@name='skillFortitudeSurvival']"/>
+	<remove xpath="//skills/skill[@name='skillFortitudeRecovery']"/>
+	<remove xpath="//skills/skill[@name='skillAgilityCombat']"/>
+	<remove xpath="//skills/skill[@name='skillAgilityAthletics']"/>
+	<remove xpath="//skills/skill[@name='skillAgilityStealth']"/>
+	<remove xpath="//skills/skill[@name='skillIntellectCombat']"/>
+	<remove xpath="//skills/skill[@name='skillIntellectInfluence']"/>
+	<remove xpath="//skills/skill[@name='skillIntellectCraftsmanship']"/>
 
-	<remove xpath="/progression/perks/perk[@name='perkArchery']"/>
-	<remove xpath="/progression/perks/perk[@name='perkGunslinger']"/>
-	<remove xpath="/progression/perks/perk[@name='perkDeepCuts']"/>
-	<remove xpath="/progression/perks/perk[@name='perkFlurryOfAgility']"/>
-	<remove xpath="/progression/perks/perk[@name='perkRunAndGun']"/>
-	<remove xpath="/progression/perks/perk[@name='perkLightArmor']"/>
-	<remove xpath="/progression/perks/perk[@name='perkParkour']"/>
-	<remove xpath="/progression/perks/perk[@name='perkHiddenStrike']"/>
-	<remove xpath="/progression/perks/perk[@name='perkFromTheShadows']"/>
+	<!-- *** Remove Lockpick Crafting from Workstations -->
+	<remove xpath="//crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='resourceLockPick']"/>
 
-	<remove xpath="/progression/perks/perk[@name='perkElectrocutioner']"/>
-	<remove xpath="/progression/perks/perk[@name='perkTurrets']"/>
-	<remove xpath="/progression/perks/perk[@name='perkFlurryOfIntellect']"/>
-	<remove xpath="/progression/perks/perk[@name='perkBetterBarter']"/>
-	<remove xpath="/progression/perks/perk[@name='perkDaringAdventurer']"/>
-	<remove xpath="/progression/perks/perk[@name='perkCharismaticNature']"/>
-	<remove xpath="/progression/perks/perk[@name='perkPhysician']"/>
-	<remove xpath="/progression/perks/perk[@name='perkAdvancedEngineering']"/>
-	<remove xpath="/progression/perks/perk[@name='perkGreaseMonkey']"/>
-	<remove xpath="/progression/perks/perk[@name='perkLockPicking']"/>
 
-	<!-- Add Perk Categories -->
-	<insertBefore xpath="/progression/attributes/attribute[@name='attBooks']">
+	<!--
+	* |===================================================================================
+	* | Remove Perks
+	* |===================================================================================
+	-->
+	<remove xpath="//perks/perk[@name='perkDeadEye']"/>
+	<remove xpath="//perks/perk[@name='perkDemolitionsExpert']"/>
+	<remove xpath="//perks/perk[@name='perkJavelinMaster']"/>
+	<remove xpath="//perks/perk[@name='perkFlurryOfPerception']"/>
+	<remove xpath="//perks/perk[@name='perkInfiltrator']"/>
+	<remove xpath="//perks/perk[@name='perkAnimalTracker']"/>
+	<remove xpath="//perks/perk[@name='perkPenetrator']"/>
+	<remove xpath="//perks/perk[@name='perkLuckyLooter']"/>
+	<remove xpath="//perks/perk[@name='perkTreasureHunter']"/>
+	<remove xpath="//perks/perk[@name='perkSalvageOperations']"/>
+
+	<remove xpath="//perks/perk[@name='perkBoomstick']"/>
+	<remove xpath="//perks/perk[@name='perkPummelPete']"/>
+	<remove xpath="//perks/perk[@name='perkSkullCrusher']"/>
+	<remove xpath="//perks/perk[@name='perkFlurryOfStrength']"/>
+
+	<remove xpath="//perks/perk[@name='perkHeavyArmor']"/>
+	<remove xpath="//perks/perk[@name='perkPackMule']"/>
+	<remove xpath="//perks/perk[@name='perkMasterChef']"/>
+	<remove xpath="//perks/perk[@name='perkMiner69r']"/>
+	<remove xpath="//perks/perk[@name='perkMotherLode']"/>
+
+	<remove xpath="//perks/perk[@name='perkBrawler']"/>
+	<remove xpath="//perks/perk[@name='perkMachineGunner']"/>
+	<remove xpath="//perks/perk[@name='perkFlurryOfFortitude']"/>
+	<remove xpath="//perks/perk[@name='perkTheHuntsman']"/>
+	<remove xpath="//perks/perk[@name='perkWellInsulated']"/>
+	<remove xpath="//perks/perk[@name='perkLivingOffTheLand']"/>
+	<remove xpath="//perks/perk[@name='perkPainTolerance']"/>
+	<remove xpath="//perks/perk[@name='perkHealingFactor']"/>
+	<remove xpath="//perks/perk[@name='perkSlowMetabolism']"/>
+	<remove xpath="//perks/perk[@name='perkRuleOneCardio']"/>
+
+	<remove xpath="//perks/perk[@name='perkArchery']"/>
+	<remove xpath="//perks/perk[@name='perkGunslinger']"/>
+	<remove xpath="//perks/perk[@name='perkDeepCuts']"/>
+	<remove xpath="//perks/perk[@name='perkFlurryOfAgility']"/>
+	<remove xpath="//perks/perk[@name='perkRunAndGun']"/>
+	<remove xpath="//perks/perk[@name='perkLightArmor']"/>
+	<remove xpath="//perks/perk[@name='perkParkour']"/>
+	<remove xpath="//perks/perk[@name='perkHiddenStrike']"/>
+	<remove xpath="//perks/perk[@name='perkFromTheShadows']"/>
+
+	<remove xpath="//perks/perk[@name='perkElectrocutioner']"/>
+	<remove xpath="//perks/perk[@name='perkTurrets']"/>
+	<remove xpath="//perks/perk[@name='perkFlurryOfIntellect']"/>
+	<remove xpath="//perks/perk[@name='perkBetterBarter']"/>
+	<remove xpath="//perks/perk[@name='perkDaringAdventurer']"/>
+	<remove xpath="//perks/perk[@name='perkCharismaticNature']"/>
+	<remove xpath="//perks/perk[@name='perkPhysician']"/>
+	<remove xpath="//perks/perk[@name='perkAdvancedEngineering']"/>
+	<remove xpath="//perks/perk[@name='perkGreaseMonkey']"/>
+	<remove xpath="//perks/perk[@name='perkLockPicking']"/>
+
+
+	<!--
+	* |###########################################################################################
+	* | Add Back Progression
+	* |###########################################################################################
+	-->
+
+
+	<!--
+	* |===================================================================================
+	* | Perk Categories
+	* |===================================================================================
+	-->
+	<insertBefore xpath="//attributes/attribute[@name='attBooks']">
 		<attribute name="attGeneral" name_key="attGeneralName" desc_key="attGeneralDesc" icon="ui_game_symbol_player" min_level="0" max_level="0" base_skill_point_cost="0">
 			<effect_group />
 		</attribute>
@@ -103,19 +141,37 @@
 		</attribute>
 	</insertBefore>
 
-	<!-- Add Skill Categories -->
-	<insertBefore xpath="/progression/skills/book_group[@name='skillArtOfMining']">
-		<!-- Combat Skills -->
+
+	<!--
+	* |===================================================================================
+	* | Skill Categories
+	* |===================================================================================
+	-->
+	<insertBefore xpath="//skills/book_group[@name='skillArtOfMining']">
+		<!-- *** Combat Skills *** -->
 		<skill name="skillCombatMelee" parent="attCombat" name_key="skillCombatMeleeName" desc_key="skillCombatMeleeDesc" icon="ui_game_symbol_sneak_attack"><effect_group/></skill>
 		<skill name="skillCombatRanged" parent="attCombat" name_key="skillCombatRangedName" desc_key="skillCombatRangedDesc" icon="ui_game_symbol_rifle"><effect_group/></skill>
 		<skill name="skillCombatSpecialty" parent="attCombat" name_key="skillCombatSpecialtyName" desc_key="skillCombatSpecialtyDesc" icon="ui_game_symbol_electric_turret"><effect_group/></skill>
-		<!-- Survival Skills -->
+
+		<!-- *** Survival Skills *** -->
 		<skill name="skillSurvivalSustenance" parent="attSurvival" name_key="skillSurvivalSustenanceName" desc_key="skillSurvivalSustenanceDesc" icon="ui_game_symbol_animal_tracker"><effect_group/></skill>
 		<skill name="skillSurvivalWellBeing" parent="attSurvival" name_key="skillSurvivalWellBeingName" desc_key="skillSurvivalWellBeingDesc" icon="ui_game_symbol_add"><effect_group/></skill>
 		<skill name="skillSurvivalArmor" parent="attSurvival" name_key="skillSurvivalArmorName" desc_key="skillSurvivalArmorDesc" icon="ui_game_symbol_armor_leather"><effect_group/></skill>
 	</insertBefore>
 
-	<append xpath="/progression/perks">
+
+	<!--
+	* |===================================================================================
+	* | Perks
+	* |===================================================================================
+	-->
+	<append xpath="//perks">
+		<!--
+		* |===================================================================================
+		* | Attributes
+		* |===================================================================================
+		-->
+		<!-- *** Perception *** -->
 		<perk name="attPerception" max_level="10" parent="attGeneral" desc_key="attPerceptionDesc" icon="ui_game_symbol_stealth">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
@@ -129,11 +185,12 @@
 			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<requirement name="ItemHasTags" tags="ranged"/>
-					<passive_effect name="BlockDamage" operation="perc_add" level="1,10" value=".05,.5"/>
-					<passive_effect name="EntityDamage" operation="perc_add" level="1,10" value=".05,.5"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="1,10" value=".1,.5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,10" value=".1,.5"/>
 					<passive_effect name="DamageModifier" operation="perc_add" level="1,8" value="0.1,.7" tags="head"/>
 					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
 					<passive_effect name="DismemberChance" operation="base_add" level="1,10" value=".05,.45"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1"  desc_key="attPerceptionRank01Desc" long_desc_key="attPerceptionRank01LongDesc"/>
 				<effect_description level="2"  desc_key="attPerceptionRank02Desc" long_desc_key="attPerceptionRank02LongDesc"/>
 				<effect_description level="3"  desc_key="attPerceptionRank03Desc" long_desc_key="attPerceptionRank03LongDesc"/>
@@ -147,6 +204,7 @@
 			</effect_group>
 		</perk>
 
+		<!-- *** Strength *** -->
 		<perk name="attStrength" max_level="10" parent="attGeneral" desc_key="attStrengthDesc" icon="ui_game_symbol_muscle">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
@@ -167,11 +225,11 @@
 			</effect_group>
 			<effect_group>
 				<requirement name="ItemHasTags" tags="melee"/>
-					<passive_effect name="BlockDamage" operation="perc_add" level="1,10" value=".05,.5"/>
-					<passive_effect name="EntityDamage" operation="perc_add" level="1,10" value=".05,.5"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head"/>
-					<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head"/>
-					<passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45"/>
+					<passive_effect name="BlockDamage" operation="perc_add" level="1,10" value=".01,.10"/>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,10" value=".01,.10"/>
+					<passive_effect name="DamageModifier" operation="perc_add" level="1,10" value="0.1,1" tags="head"/>
+					<passive_effect name="DismemberChance" operation="base_add" level="1,10" value=".05,.45"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="attStrengthRank01Desc" long_desc_key="attStrengthRank01LongDesc"/>
 				<effect_description level="2" desc_key="attStrengthRank02Desc" long_desc_key="attStrengthRank02LongDesc"/>
 				<effect_description level="3" desc_key="attStrengthRank03Desc" long_desc_key="attStrengthRank03LongDesc"/>
@@ -185,6 +243,7 @@
 			</effect_group>
 		</perk>
 
+		<!-- *** Fortitude *** -->
 		<perk name="attFortitude" max_level="10" parent="attGeneral" desc_key="attFortitudeDesc" icon="ui_game_symbol_add">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
@@ -197,11 +256,11 @@
 			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel09"/></level_requirements>
 			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" level="1,10" value=".5,6.5"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" level="1,10" value=".5,6.5" tags="heat,electrical"/>
-				<passive_effect name="BuffResistance" operation="base_add" level="1,10" value="0.005,0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
-			</effect_group>
-			<effect_group>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" level="1,10" value="1,10"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" level="1,10" value="1,10" tags="heat,electrical"/>
+				<passive_effect name="HealthMax" operation="base_add" level="1,10" value="10,100"/>
+				<passive_effect name="BuffResistance" operation="base_add" level="1,10" value="0.01,0.07" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="attFortitudeRank01Desc" long_desc_key="attFortitudeRank01LongDesc"/>
 				<effect_description level="2" desc_key="attFortitudeRank02Desc" long_desc_key="attFortitudeRank02LongDesc"/>
 				<effect_description level="3" desc_key="attFortitudeRank03Desc" long_desc_key="attFortitudeRank03LongDesc"/>
@@ -215,6 +274,7 @@
 			</effect_group>
 		</perk>
 
+		<!-- *** Agility *** -->
 		<perk name="attAgility" max_level="10" parent="attGeneral" desc_key="attAgilityDesc" icon="ui_game_symbol_agility">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
@@ -230,11 +290,11 @@
 				<passive_effect name="WalkSpeed" operation="perc_add" level="1,10" value=".05,.15" />
 				<passive_effect name="RunSpeed" operation="perc_add" level="1,10" value=".05,.15" />
 				<passive_effect name="CrouchSpeed" operation="perc_add" level="1,10" value=".05,.15" />
-				<passive_effect name="JumpStrength" operation="perc_add" level="1,10" value=".05,.15" />
-				<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.05,-.15" tags="walking,running,jumping"/>
+				<passive_effect name="JumpStrength" operation="perc_add" level="1,10" value=".05,.39" />
+				<passive_effect name="JumpStrength" operation="perc_add" level="1,10" value=".05,.39" />
+				<passive_effect name="FallDamageReduction" operation="perc_add" level="1,10" value="-.01,-.10"/>
 				<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" buff="buffPerkAbilityUpdate"/>
-			</effect_group>
-			<effect_group>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="attAgilityRank01Desc" long_desc_key="attAgilityRank01LongDesc"/>
 				<effect_description level="2" desc_key="attAgilityRank02Desc" long_desc_key="attAgilityRank02LongDesc"/>
 				<effect_description level="3" desc_key="attAgilityRank03Desc" long_desc_key="attAgilityRank03LongDesc"/>
@@ -248,6 +308,7 @@
 			</effect_group>
 		</perk>
 
+		<!-- *** Intellect *** -->
 		<perk name="attIntellect" max_level="10" parent="attGeneral" desc_key="attIntellectDesc" icon="ui_game_symbol_intellect">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel02"/></level_requirements>
@@ -263,7 +324,9 @@
 				<passive_effect name="CraftingTime" operation="perc_add" level="1,10" value="-.1,-.5"/>
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,10" value=".2,1" />
 				<passive_effect name="ScrappingTime" operation="perc_add" level="1,10" value="-.1,-.5"/>
-				<passive_effect name="LootStage" operation="perc_add" level="1,10" value=".05, .5"/>
+				<passive_effect name="LootStage" operation="perc_add" level="1,10" value=".05, .15"/>
+				<passive_effect name="ScavengingTime" operation="perc_subtract" level="1,2,3,4,5" value=".05,.5"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="attIntellectRank1Desc" long_desc_key="attIntellectRank1LongDesc"/>
 				<effect_description level="2" desc_key="attIntellectRank2Desc" long_desc_key="attIntellectRank2LongDesc"/>
 				<effect_description level="3" desc_key="attIntellectRank3Desc" long_desc_key="attIntellectRank3LongDesc"/>
@@ -277,7 +340,14 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** BRAWLER -->
+
+		<!--
+		* |===================================================================================
+		* | Combat Perks
+		* |===================================================================================
+		-->
+
+		<!-- *** BRAWLER *** -->
 		<perk name="perkBrawler" parent="skillCombatMelee" name_key="perkBrawlerName" desc_key="perkBrawlerDesc" icon="ui_game_symbol_boxer">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
@@ -305,6 +375,7 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="barBrawlingProb">
 					<requirement name="ProgressionLevel" progression_name="perkBarBrawling8Complete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkBrawlerRank1Desc" long_desc_key="perkBrawlerRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkBrawlerRank2Desc" long_desc_key="perkBrawlerRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkBrawlerRank3Desc" long_desc_key="perkBrawlerRank3LongDesc"/>
@@ -350,7 +421,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** PUMMEL PETE -->
+		<!-- *** PUMMEL PETE *** -->
 		<perk name="perkPummelPete" parent="skillCombatMelee" name_key="perkPummelPeteName" desc_key="perkPummelPeteDesc" icon="ui_game_symbol_stunned">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
@@ -433,6 +504,7 @@
 						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
 						<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="1" target="other"/>
 					</triggered_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkPummelPeteRank1Desc" long_desc_key="perkPummelPeteRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkPummelPeteRank2Desc" long_desc_key="perkPummelPeteRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkPummelPeteRank3Desc" long_desc_key="perkPummelPeteRank3LongDesc"/>
@@ -441,7 +513,7 @@
 			</effect_group>
 		</perk>
 
-				<!-- *** DEEP_CUTS -->
+		<!-- *** DEEP CUTS *** -->
 		<perk name="perkDeepCuts" parent="skillCombatMelee" name_key="perkDeepCutsName" desc_key="perkDeepCutsDesc" icon="ui_game_symbol_deep_cuts">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
@@ -461,6 +533,7 @@
 				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="bladesCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingBlades" operation="Equals" value="75"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkDeepCutsRank1Desc" long_desc_key="perkDeepCutsRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkDeepCutsRank2Desc" long_desc_key="perkDeepCutsRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkDeepCutsRank3Desc" long_desc_key="perkDeepCutsRank3LongDesc"/>
@@ -603,7 +676,7 @@
 		</perk>
 
 
-		<!-- *** SKULL CRUSHER -->
+		<!-- *** SKULL CRUSHER *** -->
 		<perk name="perkSkullCrusher" parent="skillCombatMelee" name_key="perkSkullCrusherName" desc_key="perkSkullCrusherDesc" icon="ui_game_symbol_sledge">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
@@ -672,6 +745,7 @@
 					<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="5"/>
 					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
 				</triggered_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkSkullCrusherRank1Desc" long_desc_key="perkSkullCrusherRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkSkullCrusherRank2Desc" long_desc_key="perkSkullCrusherRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkSkullCrusherRank3Desc" long_desc_key="perkSkullCrusherRank3LongDesc"/>
@@ -680,7 +754,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** JAVELIN_MASTER -->
+		<!-- *** JAVELIN MASTER *** -->
 		<perk name="perkJavelinMaster" parent="skillCombatMelee" name_key="perkJavelinMasterName" desc_key="perkJavelinMasterDesc" icon="ui_game_symbol_spear">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
@@ -708,11 +782,6 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="spearHunterProb">
 					<requirement name="ProgressionLevel" progression_name="perkSpearHunter8Complete" operation="Equals" value="1"/>
 				</passive_effect>
-				<effect_description level="1" desc_key="perkJavelinMasterRank1Desc" long_desc_key="perkJavelinMasterRank1LongDesc"/>
-				<effect_description level="2" desc_key="perkJavelinMasterRank2Desc" long_desc_key="perkJavelinMasterRank2LongDesc"/>
-				<effect_description level="3" desc_key="perkJavelinMasterRank3Desc" long_desc_key="perkJavelinMasterRank3LongDesc"/>
-				<effect_description level="4" desc_key="perkJavelinMasterRank4Desc" long_desc_key="perkJavelinMasterRank4LongDesc"/>
-				<effect_description level="5" desc_key="perkJavelinMasterRank5Desc" long_desc_key="perkJavelinMasterRank5LongDesc"/>
 			</effect_group>
 			<effect_group>
 				<requirement name="ItemHasTags" tags="perkJavelinMaster"/>
@@ -750,10 +819,16 @@
 						<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="5"/>
 						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
 					</triggered_effect>
+				<!-- Perk Level Descriptions -->
+				<effect_description level="1" desc_key="perkJavelinMasterRank1Desc" long_desc_key="perkJavelinMasterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkJavelinMasterRank2Desc" long_desc_key="perkJavelinMasterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkJavelinMasterRank3Desc" long_desc_key="perkJavelinMasterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkJavelinMasterRank4Desc" long_desc_key="perkJavelinMasterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkJavelinMasterRank5Desc" long_desc_key="perkJavelinMasterRank5LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** ELECTROCUTIONER -->
+		<!-- *** ELECTROCUTIONER *** -->
 		<perk name="perkElectrocutioner" parent="skillCombatMelee" name_key="perkElectrocutionerName" desc_key="perkElectrocutionerDesc" icon="ui_game_symbol_electric_power">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
@@ -773,11 +848,6 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="techJunkieProb">
 					<requirement name="ProgressionLevel" progression_name="perkTechJunkie8Complete" operation="Equals" value="1"/>
 				</passive_effect>
-				<effect_description level="1" desc_key="perkElectrocutionerRank1Desc" long_desc_key="perkElectrocutionerRank1LongDesc"/>
-				<effect_description level="2" desc_key="perkElectrocutionerRank2Desc" long_desc_key="perkElectrocutionerRank2LongDesc"/>
-				<effect_description level="3" desc_key="perkElectrocutionerRank3Desc" long_desc_key="perkElectrocutionerRank3LongDesc"/>
-				<effect_description level="4" desc_key="perkElectrocutionerRank4Desc" long_desc_key="perkElectrocutionerRank4LongDesc"/>
-				<effect_description level="5" desc_key="perkElectrocutionerRank5Desc" long_desc_key="perkElectrocutionerRank5LongDesc"/>
 			</effect_group>
 			<effect_group>
 				<requirement name="ItemHasTags" tags="perkElectrocutioner"/>
@@ -793,11 +863,23 @@
 					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="5"/>
 				</triggered_effect>
 			</effect_group>
+			<effect_group>
+				<!-- Each blow landed with a stun baton has a 10% higher chance for instant death -->
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				<requirement name="HoldingItemHasTags" tags="stunBaton"/>
+				<requirement name="IsAlive" target="other"/>
+				<requirement name="EntityTagCompare" target="other" tags="zombie,animal"/>
+					<passive_effect name="EntityDamage" operation="base_add" level="5" value="1500"/>
+				<!-- Perk Level Descriptions -->
+				<effect_description level="1" desc_key="perkElectrocutionerRank1Desc" long_desc_key="perkElectrocutionerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkElectrocutionerRank2Desc" long_desc_key="perkElectrocutionerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkElectrocutionerRank3Desc" long_desc_key="perkElectrocutionerRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkElectrocutionerRank4Desc" long_desc_key="perkElectrocutionerRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkElectrocutionerRank5Desc" long_desc_key="perkElectrocutionerRank5LongDesc"/>
+			</effect_group>
 		</perk>
 
-		<!-- Combat Perks Ranged-->
-
-		<!-- *** ARCHERY -->
+		<!-- *** ARCHERY *** -->
 		<perk name="perkArchery" parent="skillCombatRanged" name_key="perkArcheryName" desc_key="perkArcheryDesc" icon="ui_game_symbol_archery">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="3" desc_key="reqPlayerLevel03"/></level_requirements>
@@ -828,6 +910,7 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="rangersProb">
 					<requirement name="ProgressionLevel" progression_name="perkRangersComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkArcheryRank1Desc" long_desc_key="perkArcheryRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkArcheryRank2Desc" long_desc_key="perkArcheryRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkArcheryRank3Desc" long_desc_key="perkArcheryRank3LongDesc"/>
@@ -836,7 +919,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** GUNSLINGER -->
+		<!-- *** GUNSLINGER *** -->
 		<perk name="perkGunslinger" parent="skillCombatRanged" max_level="5" name_key="perkGunslingerName" desc_key="perkGunslingerDesc" icon="ui_game_symbol_gunslinger">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -889,6 +972,7 @@
 						<requirement name="NotHasBuff" buff="buffPerkGunslingerBonus"/>
 						<requirement name="IsAlive" target="other"/>
 					</triggered_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkGunslingerRank1Desc" long_desc_key="perkGunslingerRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkGunslingerRank2Desc" long_desc_key="perkGunslingerRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkGunslingerRank3Desc" long_desc_key="perkGunslingerRank3LongDesc"/>
@@ -897,7 +981,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** BOOMSTICK -->
+		<!-- *** BOOMSTICK *** -->
 		<perk name="perkBoomstick" parent="skillCombatRanged" name_key="perkBoomstickName" desc_key="perkBoomstickDesc" icon="ui_game_symbol_shotgun">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -945,6 +1029,7 @@
 						<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="5"/>
 						<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
 					</triggered_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkBoomstickRank1Desc" long_desc_key="perkBoomstickRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkBoomstickRank2Desc" long_desc_key="perkBoomstickRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkBoomstickRank3Desc" long_desc_key="perkBoomstickRank3LongDesc"/>
@@ -953,7 +1038,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** DEAD_EYE -->
+		<!-- *** DEAD EYE *** -->
 		<perk name="perkDeadEye" parent="skillCombatRanged" name_key="perkDeadEyeName" desc_key="perkDeadEyeDesc" icon="ui_game_symbol_map_cursor">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -988,6 +1073,7 @@
 				<requirement name="ItemHasTags" tags="perkDeadEye"/>
 				<requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="GTE" value="3"/>
 					<triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffDeadEye"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkDeadEyeRank1Desc" long_desc_key="perkDeadEyeRank1LongDesc" desc_base="Non localized modder descriptions go here"/>
 				<effect_description level="2" desc_key="perkDeadEyeRank2Desc" long_desc_key="perkDeadEyeRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkDeadEyeRank3Desc" long_desc_key="perkDeadEyeRank3LongDesc"/>
@@ -996,7 +1082,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** MACHINE_GUNNER -->
+		<!-- *** MACHINE GUNNER *** -->
 		<perk name="perkMachineGunner" parent="skillCombatRanged" name_key="perkMachineGunnerName" desc_key="perkMachineGunnerDesc" icon="ui_game_symbol_rifle">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1047,6 +1133,7 @@
 						<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="5"/>
 						<requirement name="IsAlive" target="other"/>
 					</triggered_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkMachineGunnerRank1Desc" long_desc_key="perkMachineGunnerRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkMachineGunnerRank2Desc" long_desc_key="perkMachineGunnerRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkMachineGunnerRank3Desc" long_desc_key="perkMachineGunnerRank3LongDesc"/>
@@ -1055,7 +1142,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** TURRETS -->
+		<!-- *** TURRETS *** -->
 		<perk name="perkTurrets" parent="skillCombatRanged" name_key="perkTurretsName" desc_key="perkTurretsDesc" icon="ui_game_symbol_electric_turret">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1091,6 +1178,7 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="techJunkieProb">
 					<requirement name="ProgressionLevel" progression_name="perkTechJunkie8Complete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkTurretsRank1Desc" long_desc_key="perkTurretsRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkTurretsRank2Desc" long_desc_key="perkTurretsRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkTurretsRank3Desc" long_desc_key="perkTurretsRank3LongDesc"/>
@@ -1099,9 +1187,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- Combat Perks Special Techniques -->
-
-		<!-- *** FLURRY OF STRENGTH -->
+		<!-- *** FLURRY OF STRENGTH *** -->
 		<perk name="perkFlurryOfStrength" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfStrengthName" desc_key="perkFlurryOfStrengthDesc" icon="ui_game_symbol_knunchuck">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1109,13 +1195,14 @@
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfStrength"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfStrength"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkFlurryOfStrengthRank1Desc" long_desc_key="perkFlurryOfStrengthRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkFlurryOfStrengthRank2Desc" long_desc_key="perkFlurryOfStrengthRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkFlurryOfStrengthRank3Desc" long_desc_key="perkFlurryOfStrengthRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** FLURRY OF AGILITY -->
+		<!-- *** FLURRY OF AGILITY *** -->
 		<perk name="perkFlurryOfAgility" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfAgilityName" desc_key="perkFlurryOfAgilityDesc" icon="ui_game_symbol_knunchuck">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1123,13 +1210,14 @@
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfAgility"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfAgility"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkFlurryOfAgilityRank1Desc" long_desc_key="perkFlurryOfAgilityRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkFlurryOfAgilityRank2Desc" long_desc_key="perkFlurryOfAgilityRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkFlurryOfAgilityRank3Desc" long_desc_key="perkFlurryOfAgilityRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** FLURRY OF FORTITUDE -->
+		<!-- *** FLURRY OF FORTITUDE *** -->
 		<perk name="perkFlurryOfFortitude" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfFortitudeName" desc_key="perkFlurryOfFortitudeDesc" icon="ui_game_symbol_knunchuck">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1137,13 +1225,14 @@
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfFortitude"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkFlurryOfFortitudeRank1Desc" long_desc_key="perkFlurryOfFortitudeRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkFlurryOfFortitudeRank2Desc" long_desc_key="perkFlurryOfFortitudeRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkFlurryOfFortitudeRank3Desc" long_desc_key="perkFlurryOfFortitudeRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** FLURRY OF PERCEPTION -->
+		<!-- *** FLURRY OF PERCEPTION *** -->
 		<perk name="perkFlurryOfPerception" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfPerceptionName" desc_key="perkFlurryOfPerceptionDesc" icon="ui_game_symbol_knunchuck">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1151,13 +1240,14 @@
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfPerception"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfPerception"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkFlurryOfPerceptionRank1Desc" long_desc_key="perkFlurryOfPerceptionRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkFlurryOfPerceptionRank2Desc" long_desc_key="perkFlurryOfPerceptionRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkFlurryOfPerceptionRank3Desc" long_desc_key="perkFlurryOfPerceptionRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** FLURRY OF INTELLECT -->
+		<!-- *** FLURRY OF INTELLECT *** -->
 		<perk name="perkFlurryOfIntellect" max_level="3" parent="skillCombatSpecialty" name_key="perkFlurryOfIntellectName" desc_key="perkFlurryOfIntellectDesc" icon="ui_game_symbol_knunchuck">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1165,13 +1255,14 @@
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfIntellect"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" level="1,2,3" value=".1,.17,.25" tags="perkFlurryOfIntellect"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkFlurryOfIntellectRank1Desc" long_desc_key="perkFlurryOfIntellectRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkFlurryOfIntellectRank2Desc" long_desc_key="perkFlurryOfIntellectRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkFlurryOfIntellectRank3Desc" long_desc_key="perkFlurryOfIntellectRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** HIDDEN STRIKE -->
+		<!-- *** HIDDEN STRIKE *** -->
 		<perk name="perkHiddenStrike" parent="skillCombatSpecialty" name_key="perkHiddenStrikeName" desc_key="perkHiddenStrikeDesc" icon="ui_game_symbol_sneak_attack">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1184,13 +1275,6 @@
 				<requirement name="!ItemHasTags" tags="perkSkullCrusher"/>
 					<passive_effect name="DamageBonus" operation="base_add" level="0,1,2,3,4,5" value="1.5,2,2.5,3,3.5,4"/> <!--For UI-->
 					<passive_effect name="EntityDamage" operation="perc_add" level="0,1,2,3,4,5" value=".5,1,1.5,2,2.5,3"/>
-				<effect_description level="1" desc_key="perkHiddenStrikeRank1Desc" long_desc_key="perkHiddenStrikeRank1LongDesc"/>
-				<effect_description level="2" desc_key="perkHiddenStrikeRank2Desc" long_desc_key="perkHiddenStrikeRank2LongDesc"/>
-				<effect_description level="3" desc_key="perkHiddenStrikeRank3Desc" long_desc_key="perkHiddenStrikeRank3LongDesc"/>
-				<effect_description level="4" desc_key="perkHiddenStrikeRank4Desc" long_desc_key="perkHiddenStrikeRank4LongDesc"/>
-				<effect_description level="5" desc_key="perkHiddenStrikeRank5Desc" long_desc_key="perkHiddenStrikeRank5LongDesc"/>
-			</effect_group>
-			<effect_group>
 				<!-- Increase the chance to find Urban Combat books until each book is read -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="urbanProb">
 					<requirement name="ProgressionLevel" progression_name="perkUrbanCombatComplete" operation="LT" value="1"/>
@@ -1199,10 +1283,16 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="urbanProb">
 					<requirement name="ProgressionLevel" progression_name="perkUrbanCombatComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
+				<effect_description level="1" desc_key="perkHiddenStrikeRank1Desc" long_desc_key="perkHiddenStrikeRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkHiddenStrikeRank2Desc" long_desc_key="perkHiddenStrikeRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkHiddenStrikeRank3Desc" long_desc_key="perkHiddenStrikeRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHiddenStrikeRank4Desc" long_desc_key="perkHiddenStrikeRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHiddenStrikeRank5Desc" long_desc_key="perkHiddenStrikeRank5LongDesc"/>
 			</effect_group>
 		</perk>
 
-			<!-- *** FROM THE SHADOWS -->
+			<!-- *** FROM THE SHADOWS *** -->
 		<perk name="perkFromTheShadows" parent="skillCombatSpecialty" name_key="perkFromTheShadowsName" desc_key="perkFromTheShadowsDesc" icon="ui_game_symbol_bat">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1210,47 +1300,46 @@
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqPlayerLevel25"/></level_requirements>
 			<effect_group>
-				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1">
 					<passive_effect name="LightMultiplier" operation="perc_add" level="0,5" value="0,-.65">
 						<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="65"/>
 					</passive_effect>
 					<passive_effect name="NoiseMultiplier" operation="perc_add" level="0,5" value="0,-.5"/>
 					<passive_effect name="CrouchSpeed" operation="perc_add" level="0,5" value="0,0.5"/>
 					<passive_effect name="EnemySearchDuration" operation="perc_add" level="0,1,2,3,4,5" value="0,-.17,-.33,-.5,-.58,-.67"/>
+				</requirement>
+				<!-- Increase the chance to find Night Stalker books until each book is read -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="nightStalkerProb">
+					<requirement name="ProgressionLevel" progression_name="perkNightStalkerComplete" operation="LT" value="1"/>
+				</passive_effect>
+				<!-- When all Night Stalker books have been read, set the probability bonus of finding them to 0 -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="nightStalkerProb">
+					<requirement name="ProgressionLevel" progression_name="perkNightStalkerComplete" operation="Equals" value="1"/>
+				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkFromTheShadowsRank1Desc" long_desc_key="perkFromTheShadowsRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkFromTheShadowsRank2Desc" long_desc_key="perkFromTheShadowsRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkFromTheShadowsRank3Desc" long_desc_key="perkFromTheShadowsRank3LongDesc"/>
 				<effect_description level="4" desc_key="perkFromTheShadowsRank4Desc" long_desc_key="perkFromTheShadowsRank4LongDesc"/>
 				<effect_description level="5" desc_key="perkFromTheShadowsRank5Desc" long_desc_key="perkFromTheShadowsRank5LongDesc"/>
 			</effect_group>
-			<effect_group>
-				<!-- Increase the chance to find Night Stalker books until each book is read -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="nightStalkerProb">
-					<requirement name="ProgressionLevel" progression_name="perkNightStalkerComplete" operation="LT" value="1"/>
-				</passive_effect>
-
-				<!-- When all Night Stalker books have been read, set the probability bonus of finding them to 0 -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="nightStalkerProb">
-					<requirement name="ProgressionLevel" progression_name="perkNightStalkerComplete" operation="Equals" value="1"/>
-				</passive_effect>
-			</effect_group>
 		</perk>
 
-		<!-- *** RUN AND GUN -->
+		<!-- *** RUN AND GUN *** -->
 		<perk name="perkRunAndGun" max_level="3" parent="skillCombatSpecialty" name_key="perkRunAndGunName" desc_key="perkRunandGunDesc" icon="ui_game_symbol_run_and_gun">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="SpreadMultiplierHip" operation="perc_add" level="1,2,3" value="-.1,-.17,-.25" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
-				<!-- movement component is in buffReloadMovementPenalty -->
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkRunAndGunRank1Desc" long_desc_key="perkRunAndGunRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkRunAndGunRank2Desc" long_desc_key="perkRunAndGunRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkRunAndGunRank3Desc" long_desc_key="perkRunAndGunRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** PENETRATOR -->
+		<!-- *** PENETRATOR *** -->
 		<perk name="perkPenetrator" max_level="4" parent="skillCombatSpecialty" name_key="perkPenetratorName" desc_key="perkPenetratorDesc" icon="ui_game_symbol_paint_copy_block">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1259,11 +1348,8 @@
 			<effect_group>
 				<passive_effect name="TargetArmor" operation="perc_add" level="1,2,3,4" value="-.10,-.15,-.2,-.2" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,turretRanged,perkPenetrator,perkArchery"/>
 				<passive_effect name="TargetArmor" operation="perc_add" level="1,2,3,4" value="-.2,-.3,-.4,-.5" tags="perkJavelinMaster"/>
-
-				<!-- Note: the 1 penetration effect is on <item name="ammo762mmBulletAP"> and other AP bullets -->
 				<passive_effect name="EntityPenetrationCount" operation="perc_add" level="2,4" value="1,3" tags="perkDeadEye"/>
-				<!--	All AP ammo has 1 penetration -->
-
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkPenetratorRank1Desc" long_desc_key="perkPenetratorRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkPenetratorRank2Desc" long_desc_key="perkPenetratorRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkPenetratorRank3Desc" long_desc_key="perkPenetratorRank3LongDesc"/>
@@ -1271,7 +1357,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** DEMOLITIONS EXPERT -->
+		<!-- *** DEMOLITIONS EXPERT *** -->
 		<perk name="perkDemolitionsExpert" parent="skillCombatSpecialty" name_key="perkDemolitionsExpertName" desc_key="perkDemolitionsExpertDesc" icon="ui_game_symbol_explosion">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1296,6 +1382,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" level="0,5" value="0,.5" tags="perkDemolitionsExpert"/>
 				<passive_effect name="WeaponHandling" operation="perc_add" level="1,5" value="0.1,0.5" tags="perkDemolitionsExpert"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1,5" value="0.15,0.35" tags="perkDemolitionsExpert"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkDemolitionsExpertRank1Desc" long_desc_key="perkDemolitionsExpertRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkDemolitionsExpertRank2Desc" long_desc_key="perkDemolitionsExpertRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkDemolitionsExpertRank3Desc" long_desc_key="perkDemolitionsExpertRank3LongDesc"/>
@@ -1304,7 +1391,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** CHARISMATIC_NATURE -->
+		<!-- *** CHARISMATIC NATURE *** -->
 		<perk name="perkCharismaticNature" max_level="5" parent="skillCombatSpecialty" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1335,6 +1422,7 @@
 				<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" buff="buffPerkCharismaticNature" target="selfOtherPlayers" target_tags="ally,party">
 					<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="GTE" value="1"/>
 				</triggered_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkCharismaticNatureRank1Desc" long_desc_key="perkCharismaticNatureRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkCharismaticNatureRank2Desc" long_desc_key="perkCharismaticNatureRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkCharismaticNatureRank3Desc" long_desc_key="perkCharismaticNatureRank3LongDesc"/>
@@ -1343,9 +1431,13 @@
 			</effect_group>
 		</perk>
 
-		<!-- Looting -->
+		<!--
+		* |===================================================================================
+		* | Looting
+		* |===================================================================================
+		-->
 
-		<!-- *** INFILTRATOR -->
+		<!-- *** INFILTRATOR *** -->
 		<perk name="perkInfiltrator" max_level="3" parent="attLooting" name_key="perkInfiltratorName" desc_key="perkInfiltratorDesc" icon="ui_game_symbol_stealth">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1355,14 +1447,14 @@
 				<passive_effect name="LandMineTriggerDelay" operation="base_add" level="1,2,3" value=".5,1,2"/>
 				<passive_effect name="TrapIncomingDamage" operation="perc_add" level="1,2,3" value="-.2,-.35,-.5"/>
 				<passive_effect name="BlockPickup" operation="base_set" level="3" value="1" tags="Mine" />
-
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkInfiltratorRank1Desc" long_desc_key="perkInfiltratorRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkInfiltratorRank2Desc" long_desc_key="perkInfiltratorRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkInfiltratorRank3Desc" long_desc_key="perkInfiltratorRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** LUCKY LOOTER -->
+		<!-- *** LUCKY LOOTER *** -->
 		<perk name="perkLuckyLooter" parent="attLooting" name_key="perkLuckyLooterName" desc_key="perkLuckyLooterDesc" icon="ui_game_symbol_shopping_cart">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1371,15 +1463,7 @@
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
 				<passive_effect name="LootStage" operation="perc_add" level="1,5" value=".05,.25"/>
-					<!-- LootStage only counts for containers that you open. It does not affect party loot GS. -->
 				<passive_effect name="ScavengingTime" operation="perc_subtract" level="1,2,3,4,5" value=".1,.2,.4,.6,.8"/>
-				<effect_description level="1" desc_key="perkLuckyLooterRank1Desc" long_desc_key="perkLuckyLooterRank1LongDesc"/>
-				<effect_description level="2" desc_key="perkLuckyLooterRank2Desc" long_desc_key="perkLuckyLooterRank2LongDesc"/>
-				<effect_description level="3" desc_key="perkLuckyLooterRank3Desc" long_desc_key="perkLuckyLooterRank3LongDesc"/>
-				<effect_description level="4" desc_key="perkLuckyLooterRank4Desc" long_desc_key="perkLuckyLooterRank4LongDesc"/>
-				<effect_description level="5" desc_key="perkLuckyLooterRank5Desc" long_desc_key="perkLuckyLooterRank5LongDesc"/>
-			</effect_group>
-			<effect_group>
 				<!-- Increase the chance to find Lucky Looter books until each book is read -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="luckyProb">
 					<requirement name="ProgressionLevel" progression_name="perkLuckyLooterComplete" operation="LT" value="1"/>
@@ -1388,10 +1472,16 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="luckyProb">
 					<requirement name="ProgressionLevel" progression_name="perkLuckyLooterComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
+				<effect_description level="1" desc_key="perkLuckyLooterRank1Desc" long_desc_key="perkLuckyLooterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkLuckyLooterRank2Desc" long_desc_key="perkLuckyLooterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkLuckyLooterRank3Desc" long_desc_key="perkLuckyLooterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkLuckyLooterRank4Desc" long_desc_key="perkLuckyLooterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkLuckyLooterRank5Desc" long_desc_key="perkLuckyLooterRank5LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** Treasure Hunter -->
+		<!-- *** TREASURE HUNTER *** -->
 		<perk name="perkTreasureHunter" max_level="3" parent="attLooting" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1399,13 +1489,16 @@
 			<effect_group>
 				<passive_effect name="TreasureBlocksPerReduction" operation="base_add" level="0,1,2,3" value="0,-3,-5,-7"/><!-- base value in quests is 10 -->
 				<passive_effect name="LootQuantity" operation="perc_add" level="1,2,3" value=".1,.2,.3" tags="buriedTreasure"/>
+				<!-- * Added Effect -->
+				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".3,1.5" tags="shovel"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkTreasureHunterRank1Desc" long_desc_key="perkTreasureHunterRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkTreasureHunterRank2Desc" long_desc_key="perkTreasureHunterRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkTreasureHunterRank3Desc" long_desc_key="perkTreasureHunterRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** PACK_MULE -->
+		<!-- *** PACK MULE *** -->
 		<perk name="perkPackMule" parent="attLooting" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel01"/></level_requirements>
@@ -1414,6 +1507,7 @@
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel01"/></level_requirements>
 			<effect_group>
 				<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4,5" value="3,6,10,14,18"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkPackMuleRank1Desc" long_desc_key="perkPackMuleRank1LongDesc" />
 				<effect_description level="2" desc_key="perkPackMuleRank2Desc" long_desc_key="perkPackMuleRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkPackMuleRank3Desc" long_desc_key="perkPackMuleRank3LongDesc"/>
@@ -1422,7 +1516,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** PARKOUR -->
+		<!-- *** PARKOUR *** -->
 		<perk name="perkParkour" max_level="4" parent="attLooting" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1430,9 +1524,8 @@
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
 				<passive_effect name="JumpStrength" operation="perc_add" level="2,3,4" value=".39,.39,.75"/>
-				<!-- .125  is min jump with a broken leg, .16 = 1.5m easy, .175 = 2m barely, .186 = 2m plus a bit, .22 = 2.3m (1.6 + 39%), .276 = juuust 3.3m  (1.6 + 75%) -->
-				<!--passive_effect name="SafeFallDist" operation="base_add" level="3,5" value="5,25"/-->
 				<passive_effect name="StaminaLoss" operation="perc_add" level="1,4" value="-.1,-.4" tags="jumping"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkParkourRank1Desc" long_desc_key="perkParkourRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkParkourRank2Desc" long_desc_key="perkParkourRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkParkourRank3Desc" long_desc_key="perkParkourRank3LongDesc"/>
@@ -1440,7 +1533,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** BETTER BARTER -->
+		<!-- *** BETTER BARTER *** -->
 		<perk name="perkBetterBarter" parent="attLooting" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1450,6 +1543,7 @@
 			<effect_group>
 				<passive_effect name="BarteringBuying" operation="base_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25"/>
 				<passive_effect name="BarteringSelling" operation="base_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkBetterBarterRank1Desc" long_desc_key="perkBetterBarterRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkBetterBarterRank2Desc" long_desc_key="perkBetterBarterRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkBetterBarterRank3Desc" long_desc_key="perkBetterBarterRank3LongDesc"/>
@@ -1458,7 +1552,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** DARING_ADVENTURER -->
+		<!-- *** DARING ADVENTURER *** -->
 		<perk name="perkDaringAdventurer" max_level="4" parent="attLooting" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1468,6 +1562,7 @@
 				<passive_effect name="TraderStage" operation="base_add" level="1,4" value="10,40"/>
 				<passive_effect name="QuestBonusItemReward" operation="perc_add" level="1,4" value=".05,.20"/> <!-- Bonus Dukes -->
 				<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="4" value="1"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkDaringAdventurerRank1Desc" long_desc_key="perkDaringAdventurerRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkDaringAdventurerRank2Desc" long_desc_key="perkDaringAdventurerRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkDaringAdventurerRank3Desc" long_desc_key="perkDaringAdventurerRank3LongDesc"/>
@@ -1475,14 +1570,16 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** LOCK PICKING -->
+		<!-- *** LOCK PICKING *** -->
 		<perk name="perkLockPicking" max_level="3" parent="attLooting" name_key="perkLockPickingName" desc_key="perkLockPickingDesc" icon="ui_game_symbol_unlock">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel01"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<passive_effect name="LockPickTime" operation="perc_subtract" level="1,3" value=".17,.375"/>
-				<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,3" value="1" tags="resourceLockPick"/> -->
+				<!-- * Unlock Lockpicks -->
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,3" value="1" tags="resourceLockPick"/>
+				<!-- * Altered Perk Values -->
+				<passive_effect name="LockPickTime" operation="perc_subtract" level="1,3" value=".2,.5"/>
 				<passive_effect name="LockPickBreakChance" operation="perc_subtract" level="1,3" value=".2,.5"/>
 				<!-- Increase the chance to find lockpicks with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,3" value="2,10" tags="workstationSkill"/>
@@ -1494,17 +1591,20 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,3" value="0,0" tags="greatHeistProb">
 					<requirement name="ProgressionLevel" progression_name="perkGreatHeistComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkLockPickingRank1Desc" long_desc_key="perkLockPickingRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkLockPickingRank2Desc" long_desc_key="perkLockPickingRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkLockPickingRank3Desc" long_desc_key="perkLockPickingRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- Survival Perks -->
+		<!--
+		* |===================================================================================
+		* | Survival Perks
+		* |===================================================================================
+		-->
 
-		<!-- Sustenance -->
-
-		<!-- *** THE HUNTSMAN -->
+		<!-- *** THE HUNTSMAN *** -->
 		<perk name="perkTheHuntsman" parent="skillSurvivalSustenance" name_key="perkTheHuntsmanName" desc_key="perkTheHuntsmanDesc" icon="ui_game_symbol_archery">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1512,8 +1612,8 @@
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
-				<!-- stone axe, knives, etc do the base_set 1 -->
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="butcherHarvest"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkTheHuntsmanRank1Desc" long_desc_key="perkTheHuntsmanRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkTheHuntsmanRank2Desc" long_desc_key="perkTheHuntsmanRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkTheHuntsmanRank3Desc" long_desc_key="perkTheHuntsmanRank3LongDesc"/>
@@ -1522,7 +1622,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** LIVING OFF THE LAND -->
+		<!-- *** LIVING OFF THE LAND *** -->
 		<perk name="perkLivingOffTheLand" max_level="3" parent="skillSurvivalSustenance" name_key="perkLivingOffTheLandName" desc_key="perkLivingOffTheLandDesc" icon="ui_game_symbol_tree">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1530,7 +1630,9 @@
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
-				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkLivingOffTheLandCrafting"/><!-- fake crafting perk that is used to scale resources -->
+				<!-- fake crafting perk that is used to scale resources -->
+				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkLivingOffTheLandCrafting"/>
+				<!-- Perk Effects -->
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,2,3,4,5" value="1,1,2,3,3" tags="cropHarvest,wildCropsHarvest"/>
 				<passive_effect name="HarvestCount" operation="base_set" level="4,5" value="1,1" tags="bonusCropHarvest"/>
 				<!-- Increase the chance to find seeds with each perk rank -->
@@ -1543,6 +1645,7 @@
 				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="seedCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingSeeds" operation="Equals" value="20"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkLivingOffTheLandRank1Desc" long_desc_key="perkLivingOffTheLandRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkLivingOffTheLandRank2Desc" long_desc_key="perkLivingOffTheLandRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkLivingOffTheLandRank3Desc" long_desc_key="perkLivingOffTheLandRank3LongDesc"/>
@@ -1551,7 +1654,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** MASTER CHEF -->
+		<!-- *** MASTER CHEF *** -->
 		<perk name="perkMasterChef" max_level="3" parent="skillSurvivalSustenance" name_key="perkMasterChefName" desc_key="perkMasterChefDesc" icon="ui_game_symbol_spatula">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1572,13 +1675,14 @@
 				<passive_effect name="LootProb" operation="base_set" level="1,3" value="0,0" tags="foodCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingFood" operation="Equals" value="100"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkMasterChefRank1Desc" long_desc_key="perkMasterChefRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkMasterChefRank2Desc" long_desc_key="perkMasterChefRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkMasterChefRank3Desc" long_desc_key="perkMasterChefRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** SLOW METABOLISM / IRON GUT -->
+		<!-- *** SLOW METABOLISM / IRON GUT *** -->
 		<perk name="perkSlowMetabolism" parent="skillSurvivalSustenance" name_key="perkSlowMetabolismName" desc_key="perkSlowMetabolismDesc" icon="ui_game_symbol_stomach">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1589,8 +1693,8 @@
 				<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
 				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
 				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" level="1,5" value="-.05,-.25"/>
-				<!-- see <buff name="buffPerkAbilityUpdate"> for cvar based ability changes -->
 				<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkSlowMetabolismRank1Desc" long_desc_key="perkSlowMetabolismRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkSlowMetabolismRank2Desc" long_desc_key="perkSlowMetabolismRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkSlowMetabolismRank3Desc" long_desc_key="perkSlowMetabolismRank3LongDesc"/>
@@ -1599,9 +1703,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- Well Being -->
-
-		<!-- *** PAIN TOLERANCE -->
+		<!-- *** PAIN TOLERANCE *** -->
 		<perk name="perkPainTolerance" parent="skillSurvivalWellBeing" name_key="perkPainToleranceName" desc_key="perkPainToleranceDesc" icon="ui_game_symbol_character">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1611,6 +1713,7 @@
 			<effect_group>
 				<passive_effect name="GeneralDamageResist" operation="base_add" level="1,5" value=".05,.25"/>
 				<passive_effect name="BuffResistance" operation="base_add" level="1,5" value="0.20,1" tags="buffInjuryStunned01,buffInjuryStunned02"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkPainToleranceRank1Desc" long_desc_key="perkPainToleranceRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkPainToleranceRank2Desc" long_desc_key="perkPainToleranceRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkPainToleranceRank3Desc" long_desc_key="perkPainToleranceRank3LongDesc"/>
@@ -1619,7 +1722,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** HEALING FACTOR -->
+		<!-- *** HEALING FACTOR *** -->
 		<perk name="perkHealingFactor" parent="skillSurvivalWellBeing" name_key="perkHealingFactorName" desc_key="perkHealingFactorDesc" icon="ui_game_symbol_healing_factor">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1632,6 +1735,7 @@
 				<requirement name="NotHasBuff" buff="buffStatusHungry03"/>
 				<requirement name="NotHasBuff" buff="buffStatusThirsty03"/>
 				<passive_effect name="HealthChangeOT" operation="base_add" level="1,2,3,4,5" value=".011,.022,.05,.1,.16"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkHealingFactorRank1Desc" long_desc_key="perkHealingFactorRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkHealingFactorRank2Desc" long_desc_key="perkHealingFactorRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkHealingFactorRank3Desc" long_desc_key="perkHealingFactorRank3LongDesc"/>
@@ -1640,20 +1744,15 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** WELL INSULATED -->
+		<!-- *** WELL INSULATED *** -->
 		<perk name="perkWellInsulated" max_level="3" parent="skillSurvivalWellBeing" name_key="perkWellInsulatedName" desc_key="perkWellInsulatedDesc" icon="ui_game_symbol_temperature">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
+				<!-- T3 effect is in buffElementHot/buffElementCold -->
 				<passive_effect name="HypothermalResist" operation="base_add" level="1,2,3" value="10,20,20"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" level="1,2,3" value="10,20,20"/>
-				<!-- T3 effect is in buffElementHot/buffElementCold -->
-				<effect_description level="1" desc_key="perkWellInsulatedRank1Desc" long_desc_key="perkWellInsulatedRank1LongDesc"/>
-				<effect_description level="2" desc_key="perkWellInsulatedRank2Desc" long_desc_key="perkWellInsulatedRank2LongDesc"/>
-				<effect_description level="3" desc_key="perkWellInsulatedRank3Desc" long_desc_key="perkWellInsulatedRank3LongDesc"/>
-			</effect_group>
-			<effect_group>
 				<!-- Increase the chance to find Fireman's Almanac books until each book is read -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,3" value="2,10" tags="firemansProb">
 					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacComplete" operation="LT" value="1"/>
@@ -1662,23 +1761,28 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,3" value="0,0" tags="firemansProb">
 					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
+				<effect_description level="1" desc_key="perkWellInsulatedRank1Desc" long_desc_key="perkWellInsulatedRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkWellInsulatedRank2Desc" long_desc_key="perkWellInsulatedRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkWellInsulatedRank3Desc" long_desc_key="perkWellInsulatedRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** RULE ONE CARDIO -->
+		<!-- *** RULE ONE CARDIO *** -->
 		<perk name="perkRuleOneCardio" max_level="3" parent="skillSurvivalWellBeing" name_key="perkRuleOneCardioName" desc_key="perkRuleOneCardioDesc" icon="ui_game_symbol_cardio">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" level="1,3" value="0.1,0.3" tags="running,swimmingRun"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkRuleOneCardioNameRank1Desc" long_desc_key="perkRuleOneCardioNameRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkRuleOneCardioNameRank2Desc" long_desc_key="perkRuleOneCardioNameRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkRuleOneCardioNameRank3Desc" long_desc_key="perkRuleOneCardioNameRank3LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** PHYSICIAN -->
+		<!-- *** PHYSICIAN *** -->
 		<perk name="perkPhysician" max_level="5" parent="skillSurvivalWellBeing" name_key="perkPhysicianName" desc_key="perkPhysicianDesc" icon="ui_game_symbol_medical">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1689,8 +1793,6 @@
 				<!-- Craft items in the chemical station faster -->
 				<passive_effect name="CraftingTime" operation="perc_add" level="2,3,4,5" value="-.2,-.2,-.4,-.4" tags="chemStationCrafting"/>
 				<!-- Heal sprains with splint or cast with level 1 -->
-				<!-- Intellect weapons have an added 20% chance to dismember -->
-				<passive_effect name="DismemberChance" operation="base_add" level="4,5" value=".2" tags="attIntellect"/>
 				<!-- crit hit effects heal rate is assigned in buffStatusCheck02 -->
 				<passive_effect name="PlayerExpGain" operation="perc_add" level="1,2,3,4,5" value="1,2,5,5,5" tags="medical">
 					<requirement name="HoldingItemHasTags" tags="medical"/>
@@ -1707,25 +1809,16 @@
 				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="medicalCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingMedical" operation="Equals" value="75"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkPhysicianRank1Desc" long_desc_key="perkPhysicianRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkPhysicianRank2Desc" long_desc_key="perkPhysicianRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkPhysicianRank3Desc" long_desc_key="perkPhysicianRank3LongDesc"/>
 				<effect_description level="4" desc_key="perkPhysicianRank4Desc" long_desc_key="perkPhysicianRank4LongDesc"/>
 				<effect_description level="5" desc_key="perkPhysicianRank5Desc" long_desc_key="perkPhysicianRank5LongDesc"/>
 			</effect_group>
-			<effect_group>
-				<!-- Each blow landed with a stun baton has a 10% higher chance for instant death -->
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				<requirement name="HoldingItemHasTags" tags="stunBaton"/>
-				<requirement name="IsAlive" target="other"/>
-				<requirement name="EntityTagCompare" target="other" tags="zombie,animal"/>
-					<passive_effect name="EntityDamage" operation="base_add" level="5" value="1500"/>
-			</effect_group>
 		</perk>
 
-		<!-- Armor Perks -->
-
-		<!-- *** LIGHT ARMOR -->
+		<!-- *** LIGHT ARMOR *** -->
 		<perk name="perkLightArmor" max_level="4" parent="skillSurvivalArmor" name_key="perkLightArmorName" desc_key="perkLightArmorDesc" icon="ui_game_symbol_light_armor2">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1752,22 +1845,27 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,4" value="0,0" tags="needleProb">
 					<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkLightArmorRank1Desc" long_desc_key="perkLightArmorRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkLightArmorRank2Desc" long_desc_key="perkLightArmorRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkLightArmorRank3Desc" long_desc_key="perkLightArmorRank3LongDesc"/>
 				<effect_description level="4" desc_key="perkLightArmorRank4Desc" long_desc_key="perkLightArmorRank4LongDesc"/>
-				<!-- <effect_description level="5" desc_key="perkLightArmorRank5Desc" long_desc_key="perkLightArmorRank5LongDesc"/> -->
+			</effect_group>
+			<!-- Added Perk Effects -->
+			<effect_group>
+				<requirement name="ItemHasTags" tags="lightArmor"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" level="1,4" value=".05,.1"/>
+					<passive_effect name="ElementalDamageResist" operation="perc_add" level="1,4" value=".05,.1" tags="heat,electrical"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** HEAVY ARMOR -->
+		<!-- *** HEAVY ARMOR *** -->
 		<perk name="perkHeavyArmor" max_level="4" parent="skillSurvivalArmor" name_key="perkHeavyArmorName" desc_key="perkHeavyArmorDesc" icon="ui_game_symbol_armor_iron">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<effect_group>
-				<!-- Stamina/mobility are handled in buffStatusCheck02 -->
 				<passive_effect name="DegradationPerUse" operation="perc_add" level="0,4" value="0,-.66" tags="heavyArmorDeg"/>
 				<!-- Increase the chance to find armor with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,4" value="2,10" tags="armorHeavySkill"/>
@@ -1787,17 +1885,28 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,4" value="0,0" tags="needleProb">
 					<requirement name="ProgressionLevel" progression_name="perkNeedleAndThreadComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkHeavyArmorRank1Desc" long_desc_key="perkHeavyArmorRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkHeavyArmorRank2Desc" long_desc_key="perkHeavyArmorRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkHeavyArmorRank3Desc" long_desc_key="perkHeavyArmorRank3LongDesc"/>
 				<effect_description level="4" desc_key="perkHeavyArmorRank4Desc" long_desc_key="perkHeavyArmorRank4LongDesc"/>
-				<!-- <effect_description level="5" desc_key="perkHeavyArmorRank5Desc" long_desc_key="perkHeavyArmorRank5LongDesc"/> -->
+			</effect_group>
+			<!-- Added Perk Effects -->
+			<effect_group>
+				<requirement name="ItemHasTags" tags="heavyArmor"/>
+					<passive_effect name="PhysicalDamageResist" operation="perc_add" level="1,4" value=".05,.1"/>
+					<passive_effect name="ElementalDamageResist" operation="perc_add" level="1,4" value=".05,.1" tags="heat,electrical"/>
 			</effect_group>
 		</perk>
 
-		<!-- Crafting Skills Perks-->
 
-		<!-- *** MINER69R -->
+		<!--
+		* |===================================================================================
+		* | Crafting Perks
+		* |===================================================================================
+		-->
+
+		<!-- *** MINER69R *** -->
 		<perk name="perkMiner69r" parent="attCraftingSkills" name_key="perkMiner69rName" desc_key="perkMiner69rDesc" icon="ui_game_symbol_mining">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1805,8 +1914,9 @@
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
 			<effect_group>
-				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".3,1.5" tags="perkMiner69r"/>
-				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="perkMiner69r"/>
+				<!-- * Altered Effects -->
+				<passive_effect name="BlockDamage" operation="perc_add" level="1,5" value=".3,1.5" tags="miningTool"/>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,5" value=".1,.5" tags="miningTool"/>
 				<!-- Increase the chance to find harvesting tools with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="harvestingSkill"/>
 				<!-- Increase the chance to find harvesting tools crafting skill magazines with each perk rank up to crafting skill 100 -->
@@ -1825,6 +1935,7 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="artOfMiningProb">
 					<requirement name="ProgressionLevel" progression_name="perkArtOfMiningComplete" operation="Equals" value="1"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkMiner69rRank1Desc" long_desc_key="perkMiner69rRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkMiner69rRank2Desc" long_desc_key="perkMiner69rRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkMiner69rRank3Desc" long_desc_key="perkMiner69rRank3LongDesc"/>
@@ -1838,20 +1949,19 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** MOTHER LODE -->
+		<!-- *** MOTHER LODE *** -->
 		<perk name="perkMotherLode" parent="attCraftingSkills" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
 			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel20"/></level_requirements>
-
 			<effect_group>
 				<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="oreWoodHarvest"/>
 				<passive_effect name="PlayerExpGain" operation="perc_add" level="1,5" value="-.1,-.4" tags="Harvesting">
-					<requirement name="HoldingItemHasTags" tags="perkMiner69r"/>
+					<requirement name="HoldingItemHasTags" tags="harvestingSkill"/>
 				</passive_effect>
-
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkMotherLodeRank1Desc" long_desc_key="perkMotherLodeRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkMotherLodeRank2Desc" long_desc_key="perkMotherLodeRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkMotherLodeRank3Desc" long_desc_key="perkMotherLodeRank3LongDesc"/>
@@ -1860,7 +1970,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** SALVAGE_OPERATIONS -->
+		<!-- *** SALVAGE OPERATIONS *** -->
 		<perk name="perkSalvageOperations" parent="attCraftingSkills" name_key="perkSalvageOperationsName" desc_key="perkSalvageOperationsDesc" icon="ui_game_symbol_scrap">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1893,14 +2003,11 @@
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="0,0" tags="wastelandProb">
 					<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresComplete" operation="Equals" value="1"/>
 				</passive_effect>
-			</effect_group>
-			<effect_group>
 				<requirement name="ItemHasTags" tags="perkSalvageOperations"/>
-				<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-.08,-.15,-.2,-.25,-.25"/>
-				<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-.07,-.15,-.2,-.25,-.25" tags="secondary"/>
-			</effect_group>
-			<effect_group>
-				<!-- wrench (or other relevant tools) do a base_add=1 to hop on the salvage train -->
+					<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-.08,-.15,-.2,-.25,-.25"/>
+					<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-.07,-.15,-.2,-.25,-.25" tags="secondary"/>
+				</requirement>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc" long_desc_key="perkSalvageOperationsRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc" long_desc_key="perkSalvageOperationsRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkSalvageOperationsRank3Desc" long_desc_key="perkSalvageOperationsRank3LongDesc"/>
@@ -1909,7 +2016,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** ENGINEERING -->
+		<!-- *** ENGINEERING *** -->
 		<perk name="perkEngineering" parent="attCraftingSkills" name_key="perkEngineeringName" desc_key="perkEngineeringDesc" icon="ui_game_symbol_workbench">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1919,8 +2026,9 @@
 			<effect_group>
 				<!-- fake crafting perk that is used to scale resources -->
 				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkEngineering"/>
-				<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.2" tags="perkEngineering"/>
-				<passive_effect name="CraftingTime" operation="perc_add" level="2,5" value="-0.2" tags="workbenchCrafting,cementMixerCrafting"/>
+				<!-- Perk Effects -->
+				<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.2,-0.4" tags="perkAdvancedEngineering,cementMixerCrafting,tablesawCrafting"/>
+				<passive_effect name="CraftingSmeltTime" operation="perc_add" level="1,5" value="-0.05,-.25"/>
 				<!-- Increase the chance to find workstations with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="workstationSkill"/>
 				<!-- Increase the chance to find workstation crafting skill magazines with each perk rank up to crafting skill 75 -->
@@ -1931,6 +2039,7 @@
 				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="workstationCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingWorkstations" operation="Equals" value="75"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkEngineeringRank1Desc" long_desc_key="perkEngineeringRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkEngineeringRank2Desc" long_desc_key="perkEngineeringRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkEngineeringRank3Desc" long_desc_key="perkEngineeringRank3LongDesc"/>
@@ -1939,7 +2048,7 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** Electrical Engineering -->
+		<!-- *** ELECTRICAL ENGINEERING *** -->
 		<perk name="perkElectricalEngineering" parent="attCraftingSkills" name_key="perkElectricalEngineeringName" desc_key="perkElectricalEngineeringDesc" icon="ui_game_symbol_electric_power">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
@@ -1949,14 +2058,13 @@
 			<effect_group>
 				<!-- fake crafting perk that is used to scale resources -->
 				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkElectricalEngineering"/>
+				<!-- Perk Effects -->
 				<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-0.2" tags="perkElectricalEngineering"/>
-				<passive_effect name="CraftingTime" operation="perc_add" level="2,5" value="-0.2" tags="workbenchCrafting"/>
 				<passive_effect name="ElectricalTrapXP" operation="base_set" level="1,2,3,4,5" value=".15,.3,.45,.6,.75"/>
 				<!-- Increase the chance to find electrical items with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="electricianSkill"/>
 				<!-- Increase the chance to find trap items with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="trapsSkill"/>
-				<!-- Increase the chance to find workstations with each perk rank -->
 				<!-- Increase the chance to find electrical crafting skill magazines with each perk rank up to crafting skill 100 -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="electricianCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingElectrician" operation="LT" value="100"/>
@@ -1973,6 +2081,7 @@
 				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="trapsCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingTraps" operation="Equals" value="75"/>
 				</passive_effect>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkElectricalEngineeringRank1Desc" long_desc_key="perkElectricalEngineeringRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkElectricalEngineeringRank2Desc" long_desc_key="perkElectricalEngineeringRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkElectricalEngineeringRank3Desc" long_desc_key="perkElectricalEngineeringRank3LongDesc"/>
@@ -1981,14 +2090,17 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** HANDY MAN-->
-		<perk name="perkHandyMan" max_level="3" parent="attCraftingSkills" name_key="perkHandyManName" desc_key="perkHandyManDesc" icon="ui_game_symbol_resource">
+		<!-- *** HANDY MAN *** -->
+		<perk name="perkHandyMan" parent="attCraftingSkills" name_key="perkHandyManName" desc_key="perkHandyManDesc" icon="ui_game_symbol_resource">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel10"/></level_requirements>
 			<effect_group>
-				<!-- fake crafting perk that is used to scale resources -->
-				<passive_effect name="CraftingTier" operation="base_set" level="0,3" value="0,3" tags="perkHandyMan"/>
+				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="repairingSkill"/>
+				<passive_effect name="RepairTime" operation="base_subtract" level="1,5" value=".1,.5" tags="perkHandyMan"/>
+				<passive_effect name="BlockRepairAmount" operation="perc_add" level="1,5" value=".25,.5" tags="perkHandyMan"/>
 				<!-- Increase the chance to find repair tools with each perk rank -->
 				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="repairingSkill"/>
 				<!-- Increase the chance to find repair tool crafting skill magazines with each perk rank up to crafting skill 50 -->
@@ -2002,13 +2114,16 @@
 				<effect_group>
 					<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresHoneyHarvest"/>
 				</effect_group>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkHandyManRank1Desc" long_desc_key="perkHandyManRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkHandyManRank2Desc" long_desc_key="perkHandyManRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkHandyManRank3Desc" long_desc_key="perkHandyManRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHandyManRank4Desc" long_desc_key="perkHandyManRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHandyManRank5Desc" long_desc_key="perkHandyManRank5LongDesc"/>
 			</effect_group>
 		</perk>
 
-		<!-- *** GREASE_MONKEY -->
+		<!-- *** GREASE MONKEY *** -->
 		<perk name="perkGreaseMonkey" parent="attCraftingSkills" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -2028,6 +2143,12 @@
 				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="vehiclesCSM">
 					<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="Equals" value="100"/>
 				</passive_effect>
+				<!-- * Added Effects -->
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" level="1,5" value="0.1,0.5"/>
+				<passive_effect name="VehicleVelocityMaxTurboPer" operation="perc_add" value="0.05,0.15"/>
+				<passive_effect name="VehicleSpeedMax" operation="perc_add" value="0.1,0.5"/>
+				<passive_effect name="VehicleBoostedSpeedMax" operation="perc_add" value="0.05,0.15"/>
+				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkGreaseMonkeyRank1Desc" long_desc_key="perkGreaseMonkeyRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkGreaseMonkeyRank2Desc" long_desc_key="perkGreaseMonkeyRank2LongDesc"/>
 				<effect_description level="3" desc_key="perkGreaseMonkeyRank3Desc" long_desc_key="perkGreaseMonkeyRank3LongDesc"/>

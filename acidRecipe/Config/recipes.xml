@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configs>
-	<!-- # Acid -->
 	<append xpath="/recipes">
     <recipe name="resourceAcid" count="5" craft_area="chemistryStation">
       <ingredient name="resourcePotassiumNitratePowder" count="20"/>
@@ -8,5 +8,4 @@
 			<ingredient name="carBattery" count="1" />
     </recipe>
   </append>
-	<!-- ## Acid-->
 </configs>

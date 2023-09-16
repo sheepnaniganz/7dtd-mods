@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="improvedShotguns"/>
+	<DisplayName value="Improved Shotguns"/>
+	<Version value="1.0.0"/>
+	<Description value="Adds knockback/knockdown to shotguns"/>
+	<Author value="sheepnaniganz"/>
+</xml>

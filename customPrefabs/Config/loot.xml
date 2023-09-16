@@ -1,0 +1,78 @@
+﻿<lootcontainers>
+    <insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+
+        <!-- Ads, Notes, and other Correspondence -->
+        <lootgroup name="zztongAds" count="1">
+            <item name="zztongAd01"/>
+            <item name="zztongAd02"/>
+            <item name="zztongAd03"/>
+            <item name="zztongAd04"/>
+            <item name="zztongAd05"/>
+            <item name="zztongAd06"/>
+            <item name="zztongAd07"/>
+            <item name="zztongAd08"/>
+            <item name="zztongAd09"/>
+            <item name="zztongAd10"/>
+            <item name="zztongAd11"/>
+            <item name="zztongAd12"/>
+            <item name="zztongAd13"/>
+            <item name="zztongAd14"/>
+            <item name="zztongAd15"/>
+            <item name="zztongAd16"/>
+            <item name="zztongAd17"/>
+            <item name="zztongAd18"/>
+            <item name="zztongAd19"/>
+            <item name="zztongAd20"/>
+            <item name="zztongAd21"/>
+            <item name="zztongAd22"/>
+            <item name="zztongAd23"/>
+            <item name="zztongAd24"/>
+            <item name="zztongAd25"/>
+        </lootgroup>
+
+        <lootgroup name="zztongNotes" count="1">
+            <item name="zztongNote01"/>
+            <item name="zztongNote02"/>
+            <item name="zztongNote03"/>
+            <item name="zztongNote04"/>
+            <item name="zztongNote05"/>
+            <item name="zztongNote06"/>
+            <item name="zztongNote07"/>
+            <item name="zztongNote08"/>
+            <item name="zztongNote09"/>
+            <item name="zztongNote10"/>
+            <item name="zztongNote11"/>
+            <item name="zztongNote12"/>
+            <item name="zztongNote13"/>
+            <item name="zztongNote14"/>
+            <item name="zztongNote15"/>
+            <item name="zztongNote16"/>
+            <item name="zztongNote17"/>
+            <item name="zztongNote18"/>
+            <item name="zztongNote19"/>
+            <item name="zztongNote20"/>
+            <item name="zztongNote21"/>
+            <item name="zztongNote22"/>
+            <item name="zztongNote23"/>
+            <item name="zztongNote24"/>
+            <item name="zztongNote25"/>
+        </lootgroup>
+
+	</insertBefore>
+
+    <!-- **************************************************************
+        Now insert our lootgroups into the lists for various
+        lootcontainers...
+    *************************************************************** -->
+
+	<append xpath="/lootcontainers/lootcontainer[@name='cbpJunk']">
+        <item group="zztongAds" prob="0.1" count="1"/>
+        <item group="zztongNotes" prob="0.1" count="1"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@name='cbpBookcaseNoBooks']">
+        <item group="zztongAds" prob="1" count="1"/>
+        <item group="zztongNotes" prob="1" count="1"/>
+	</append>
+
+</lootcontainers>
