@@ -1,10 +1,10 @@
 <configs>
-	<insertBefore xpath="//crafting_skill[@name='craftingBows']/display_entry/item[name='gunBowT1IronCrossbow']">
+	<insertBefore xpath="//crafting_skill[@name='craftingBows']/display_entry[@item='gunBowT1IronCrossbow']">
     <display_entry icon="gunBowT1WoodenBowParts" name_key="gunBowT1WoodenBowParts" has_quality="false" unlock_level="17" >
 			<unlock_entry item="gunBowT1WoodenBowParts" unlock_tier="1" />
 		</display_entry>
   </insertBefore>
-	<insertBefore xpath="//crafting_skill[@name='craftingBows']/effect_group/passive_effect[tags='gunBowT1IronCrossbow']">
+	<insertBefore xpath="//crafting_skill[@name='craftingBows']/effect_group/passive_effect[@tags='gunBowT1IronCrossbow']">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="17,100" value="1" tags="gunBowT1WoodenBowParts"/>
 	</insertBefore>
 </configs>

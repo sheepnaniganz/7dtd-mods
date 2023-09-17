@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<!-- *** Set Default Level Values *** -->
 	<set xpath="//level/@max_level">500</set>
@@ -49,6 +48,7 @@
 
 	<!-- *** Remove Lockpick Crafting from Workstations -->
 	<remove xpath="//crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='resourceLockPick']"/>
+	<remove xpath="//crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@name_key='workstationsT2-1,workstationsT2-2,workstationsT2-3,workstationsT2-4']/unlock_entry[@item='resourceLockPick']"/>
 
 
 	<!--
@@ -113,7 +113,7 @@
 
 	<!--
 	* |###########################################################################################
-	* | Add Back Progression
+	* | Progression
 	* |###########################################################################################
 	-->
 
@@ -124,21 +124,11 @@
 	* |===================================================================================
 	-->
 	<insertBefore xpath="//attributes/attribute[@name='attBooks']">
-		<attribute name="attGeneral" name_key="attGeneralName" desc_key="attGeneralDesc" icon="ui_game_symbol_player" min_level="0" max_level="0" base_skill_point_cost="0">
-			<effect_group />
-		</attribute>
-		<attribute name="attCombat" name_key="attCombatName" desc_key="attCombatDesc" icon="ui_game_symbol_marksmanship" min_level="0" max_level="0" base_skill_point_cost="0">
-			<effect_group />
-		</attribute>
-		<attribute name="attSurvival" name_key="attSurvivalName" desc_key="attSurvivalDesc" icon="ui_game_symbol_survival" min_level="0" max_level="0" base_skill_point_cost="0">
-			<effect_group />
-		</attribute>
-		<attribute name="attLooting" name_key="attLootingName" desc_key="attLootingDesc" icon="ui_game_symbol_treasure" min_level="0" max_level="0" base_skill_point_cost="0">
-			<effect_group />
-		</attribute>
-		<attribute name="attCraftingSkills" name_key="attCraftingSkillsDesc" long_desc_key="attCraftingSkillsDesc" icon="ui_game_symbol_misc_crafting" min_level="0" max_level="0" base_skill_point_cost="0">
-			<effect_group />
-		</attribute>
+		<attribute name="attGeneral" name_key="attGeneralName" desc_key="attGeneralDesc" icon="ui_game_symbol_player" min_level="0" max_level="0" base_skill_point_cost="0"/>
+		<attribute name="attCombat" name_key="attCombatName" desc_key="attCombatDesc" icon="ui_game_symbol_marksmanship" min_level="0" max_level="0" base_skill_point_cost="0"/>
+		<attribute name="attSurvival" name_key="attSurvivalName" desc_key="attSurvivalDesc" icon="ui_game_symbol_survival" min_level="0" max_level="0" base_skill_point_cost="0"/>
+		<attribute name="attLooting" name_key="attLootingName" desc_key="attLootingDesc" icon="ui_game_symbol_treasure" min_level="0" max_level="0" base_skill_point_cost="0"/>
+		<attribute name="attProduction" name_key="attProductionName" long_desc_key="attProductionDesc" icon="ui_game_symbol_misc_crafting" min_level="0" max_level="0" base_skill_point_cost="0"/>
 	</insertBefore>
 
 
@@ -157,6 +147,14 @@
 		<skill name="skillSurvivalSustenance" parent="attSurvival" name_key="skillSurvivalSustenanceName" desc_key="skillSurvivalSustenanceDesc" icon="ui_game_symbol_animal_tracker"><effect_group/></skill>
 		<skill name="skillSurvivalWellBeing" parent="attSurvival" name_key="skillSurvivalWellBeingName" desc_key="skillSurvivalWellBeingDesc" icon="ui_game_symbol_add"><effect_group/></skill>
 		<skill name="skillSurvivalArmor" parent="attSurvival" name_key="skillSurvivalArmorName" desc_key="skillSurvivalArmorDesc" icon="ui_game_symbol_armor_leather"><effect_group/></skill>
+
+		<!-- *** Looting Skills *** -->
+		<skill name="skillLootingPillaging" parent="attLooting" name_key="skillLootingPillagingName" desc_key="skillLootingPillagingDesc" icon="ui_game_symbol_backpack"><effect_group/></skill>
+		<skill name="skillLootingTrafficking" parent="attLooting" name_key="skillLootingTraffickingName" desc_key="skillLootingTraffickingDesc" icon="ui_game_symbol_shopping_cart"><effect_group/></skill>
+
+		<!-- *** Production Skills *** -->
+		<skill name="skillProductionResources" parent="attProduction" name_key="skillProductionResourcesName" desc_key="skillProductionResourcesDesc" icon="ui_game_symbol_resource"><effect_group/></skill>
+		<skill name="skillProductionCrafting" parent="attProduction" name_key="skillProductionCraftingName" desc_key="skillProductionCraftingDesc" icon="ui_game_symbol_tool"><effect_group/></skill>
 	</insertBefore>
 
 
@@ -1438,7 +1436,7 @@
 		-->
 
 		<!-- *** INFILTRATOR *** -->
-		<perk name="perkInfiltrator" max_level="3" parent="attLooting" name_key="perkInfiltratorName" desc_key="perkInfiltratorDesc" icon="ui_game_symbol_stealth">
+		<perk name="perkInfiltrator" max_level="3" parent="skillLootingPillaging" name_key="perkInfiltratorName" desc_key="perkInfiltratorDesc" icon="ui_game_symbol_stealth">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1455,7 +1453,7 @@
 		</perk>
 
 		<!-- *** LUCKY LOOTER *** -->
-		<perk name="perkLuckyLooter" parent="attLooting" name_key="perkLuckyLooterName" desc_key="perkLuckyLooterDesc" icon="ui_game_symbol_shopping_cart">
+		<perk name="perkLuckyLooter" parent="skillLootingPillaging" name_key="perkLuckyLooterName" desc_key="perkLuckyLooterDesc" icon="ui_game_symbol_shopping_cart">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1482,7 +1480,7 @@
 		</perk>
 
 		<!-- *** TREASURE HUNTER *** -->
-		<perk name="perkTreasureHunter" max_level="3" parent="attLooting" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure">
+		<perk name="perkTreasureHunter" max_level="3" parent="skillLootingTrafficking" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1499,7 +1497,7 @@
 		</perk>
 
 		<!-- *** PACK MULE *** -->
-		<perk name="perkPackMule" parent="attLooting" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
+		<perk name="perkPackMule" parent="skillLootingPillaging" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel01"/></level_requirements>
@@ -1517,7 +1515,7 @@
 		</perk>
 
 		<!-- *** PARKOUR *** -->
-		<perk name="perkParkour" max_level="4" parent="attLooting" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour">
+		<perk name="perkParkour" max_level="4" parent="skillLootingPillaging" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1534,7 +1532,7 @@
 		</perk>
 
 		<!-- *** BETTER BARTER *** -->
-		<perk name="perkBetterBarter" parent="attLooting" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
+		<perk name="perkBetterBarter" parent="skillLootingTrafficking" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1553,7 +1551,7 @@
 		</perk>
 
 		<!-- *** DARING ADVENTURER *** -->
-		<perk name="perkDaringAdventurer" max_level="4" parent="attLooting" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure">
+		<perk name="perkDaringAdventurer" max_level="4" parent="skillLootingTrafficking" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1571,7 +1569,7 @@
 		</perk>
 
 		<!-- *** LOCK PICKING *** -->
-		<perk name="perkLockPicking" max_level="3" parent="attLooting" name_key="perkLockPickingName" desc_key="perkLockPickingDesc" icon="ui_game_symbol_unlock">
+		<perk name="perkLockPicking" max_level="3" parent="skillLootingPillaging" name_key="perkLockPickingName" desc_key="perkLockPickingDesc" icon="ui_game_symbol_unlock">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1902,12 +1900,12 @@
 
 		<!--
 		* |===================================================================================
-		* | Crafting Perks
+		* | Production Perks
 		* |===================================================================================
 		-->
 
 		<!-- *** MINER69R *** -->
-		<perk name="perkMiner69r" parent="attCraftingSkills" name_key="perkMiner69rName" desc_key="perkMiner69rDesc" icon="ui_game_symbol_mining">
+		<perk name="perkMiner69r" parent="skillProductionResources" name_key="perkMiner69rName" desc_key="perkMiner69rDesc" icon="ui_game_symbol_mining">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1950,7 +1948,7 @@
 		</perk>
 
 		<!-- *** MOTHER LODE *** -->
-		<perk name="perkMotherLode" parent="attCraftingSkills" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load">
+		<perk name="perkMotherLode" parent="skillProductionResources" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -1971,7 +1969,7 @@
 		</perk>
 
 		<!-- *** SALVAGE OPERATIONS *** -->
-		<perk name="perkSalvageOperations" parent="attCraftingSkills" name_key="perkSalvageOperationsName" desc_key="perkSalvageOperationsDesc" icon="ui_game_symbol_scrap">
+		<perk name="perkSalvageOperations" parent="skillProductionResources" name_key="perkSalvageOperationsName" desc_key="perkSalvageOperationsDesc" icon="ui_game_symbol_scrap">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -2006,7 +2004,6 @@
 				<requirement name="ItemHasTags" tags="perkSalvageOperations"/>
 					<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-.08,-.15,-.2,-.25,-.25"/>
 					<passive_effect name="StaminaLoss" operation="perc_add" level="1,2,3,4,5" value="-.07,-.15,-.2,-.25,-.25" tags="secondary"/>
-				</requirement>
 				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc" long_desc_key="perkSalvageOperationsRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc" long_desc_key="perkSalvageOperationsRank2LongDesc"/>
@@ -2016,8 +2013,41 @@
 			</effect_group>
 		</perk>
 
+		<!-- *** HANDYMAN *** -->
+		<perk name="perkHandyMan" parent="skillProductionCrafting" name_key="perkHandyManName" desc_key="perkHandyManDesc" icon="ui_game_symbol_resource">
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel03"/></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel05"/></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel07"/></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel10"/></level_requirements>
+			<effect_group>
+				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="repairingSkill"/>
+				<passive_effect name="RepairTime" operation="base_subtract" level="1,5" value=".1,.5"/>
+				<passive_effect name="BlockRepairAmount" operation="perc_add" level="1,5" value=".25,.5"/>
+				<!-- Increase the chance to find repair tools with each perk rank -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="repairingSkill"/>
+				<!-- Increase the chance to find repair tool crafting skill magazines with each perk rank up to crafting skill 50 -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="repairToolsCSM">
+					<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="LT" value="50"/>
+				</passive_effect>
+				<!-- Once repair tool skill reaches 50, set the probability bonus of finding repair tool crafting skill magazines to 0 -->
+				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="repairToolsCSM">
+					<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="Equals" value="50"/>
+				</passive_effect>
+				<effect_group>
+					<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresHoneyHarvest"/>
+				</effect_group>
+				<!-- Perk Level Descriptions -->
+				<effect_description level="1" desc_key="perkHandyManRank1Desc" long_desc_key="perkHandyManRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkHandyManRank2Desc" long_desc_key="perkHandyManRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkHandyManRank3Desc" long_desc_key="perkHandyManRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkHandyManRank4Desc" long_desc_key="perkHandyManRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkHandyManRank5Desc" long_desc_key="perkHandyManRank5LongDesc"/>
+			</effect_group>
+		</perk>
+
 		<!-- *** ENGINEERING *** -->
-		<perk name="perkEngineering" parent="attCraftingSkills" name_key="perkEngineeringName" desc_key="perkEngineeringDesc" icon="ui_game_symbol_workbench">
+		<perk name="perkEngineering" parent="skillProductionCrafting" name_key="perkEngineeringName" desc_key="perkEngineeringDesc" icon="ui_game_symbol_workbench">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -2049,7 +2079,7 @@
 		</perk>
 
 		<!-- *** ELECTRICAL ENGINEERING *** -->
-		<perk name="perkElectricalEngineering" parent="attCraftingSkills" name_key="perkElectricalEngineeringName" desc_key="perkElectricalEngineeringDesc" icon="ui_game_symbol_electric_power">
+		<perk name="perkElectricalEngineering" parent="skillProductionCrafting" name_key="perkElectricalEngineeringName" desc_key="perkElectricalEngineeringDesc" icon="ui_game_symbol_electric_power">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
@@ -2090,41 +2120,8 @@
 			</effect_group>
 		</perk>
 
-		<!-- *** HANDY MAN *** -->
-		<perk name="perkHandyMan" parent="attCraftingSkills" name_key="perkHandyManName" desc_key="perkHandyManDesc" icon="ui_game_symbol_resource">
-			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqPlayerLevel01"/></level_requirements>
-			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel03"/></level_requirements>
-			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel05"/></level_requirements>
-			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel07"/></level_requirements>
-			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqPlayerLevel10"/></level_requirements>
-			<effect_group>
-				<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="repairingSkill"/>
-				<passive_effect name="RepairTime" operation="base_subtract" level="1,5" value=".1,.5" tags="perkHandyMan"/>
-				<passive_effect name="BlockRepairAmount" operation="perc_add" level="1,5" value=".25,.5" tags="perkHandyMan"/>
-				<!-- Increase the chance to find repair tools with each perk rank -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="repairingSkill"/>
-				<!-- Increase the chance to find repair tool crafting skill magazines with each perk rank up to crafting skill 50 -->
-				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="repairToolsCSM">
-					<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="LT" value="50"/>
-				</passive_effect>
-				<!-- Once repair tool skill reaches 50, set the probability bonus of finding repair tool crafting skill magazines to 0 -->
-				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="repairToolsCSM">
-					<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="Equals" value="50"/>
-				</passive_effect>
-				<effect_group>
-					<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresHoneyHarvest"/>
-				</effect_group>
-				<!-- Perk Level Descriptions -->
-				<effect_description level="1" desc_key="perkHandyManRank1Desc" long_desc_key="perkHandyManRank1LongDesc"/>
-				<effect_description level="2" desc_key="perkHandyManRank2Desc" long_desc_key="perkHandyManRank2LongDesc"/>
-				<effect_description level="3" desc_key="perkHandyManRank3Desc" long_desc_key="perkHandyManRank3LongDesc"/>
-				<effect_description level="4" desc_key="perkHandyManRank4Desc" long_desc_key="perkHandyManRank4LongDesc"/>
-				<effect_description level="5" desc_key="perkHandyManRank5Desc" long_desc_key="perkHandyManRank5LongDesc"/>
-			</effect_group>
-		</perk>
-
 		<!-- *** GREASE MONKEY *** -->
-		<perk name="perkGreaseMonkey" parent="attCraftingSkills" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
+		<perk name="perkGreaseMonkey" parent="skillProductionCrafting" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
 			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqPlayerLevel05"/></level_requirements>
 			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqPlayerLevel10"/></level_requirements>
 			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqPlayerLevel15"/></level_requirements>
@@ -2146,8 +2143,6 @@
 				<!-- * Added Effects -->
 				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" level="1,5" value="0.1,0.5"/>
 				<passive_effect name="VehicleVelocityMaxTurboPer" operation="perc_add" value="0.05,0.15"/>
-				<passive_effect name="VehicleSpeedMax" operation="perc_add" value="0.1,0.5"/>
-				<passive_effect name="VehicleBoostedSpeedMax" operation="perc_add" value="0.05,0.15"/>
 				<!-- Perk Level Descriptions -->
 				<effect_description level="1" desc_key="perkGreaseMonkeyRank1Desc" long_desc_key="perkGreaseMonkeyRank1LongDesc"/>
 				<effect_description level="2" desc_key="perkGreaseMonkeyRank2Desc" long_desc_key="perkGreaseMonkeyRank2LongDesc"/>

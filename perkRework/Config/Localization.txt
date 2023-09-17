@@ -1,23 +1,38 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 
 attGeneralDesc,progression,Attribute,,,"Here’s the key: I’m not going to tell you how to change. People don’t change. I want you to trust who you already are."
-attGeneralName,progression,Attribute,,,Attributes
+attGeneralName,progression,Attribute,,,"Player Attributes"
+attGeneral,progression,Attribute,,,"Attributes"
 
 attCombatDesc,progression,Attribute,,,"Nothing is impossible to kill. It's just that sometimes after you kill something you have to keep shooting it until it stops moving."
-attCombatName,progression,Attribute,,,Combat
+attCombatName,progression,Attribute,,,"Combat"
+attCombat,progression,Attribute,,,"Murdering Zombies is Fun"
 
 attSurvivalDesc,progression,Attribute,,,"To live, is to suffer. To survive, well, that's to find meaning in the suffer."
-attSurvivalName,progression,Attribute,,,Survival
+attSurvivalName,progression,Attribute,,,"Survival"
+attSurvival,progression,Attribute,,,"Keep on Keeping on, Like Herpes"
 
 attLootingDesc,progression,Attribute,,,"Keep a cool head, keep a sharp eye. Your nerve and levelheadedness can be the difference between cold and efficient resource gathering and being crushed under a tsunami of trampling feet."
-attLootingName,progression,Attribute,,,Looting
+attLootingName,progression,Attribute,,,"Looting"
+attLooting,progression,Attribute,,,"Go Get You Some Shit"
 
-attCraftingSkillsDesc,progression,Attribute,,,"This is the way the world ends; not with a bang or a whimper, but with zombies breaking down the back door."
-attCraftingSkillsName,progression,Attribute,,,"Crafting Skills"
+attProductionDesc,progression,Attribute,,,"This is the way the world ends; not with a bang or a whimper, but with zombies breaking down the fucking back door."
+attProductionName,progression,Attribute,,,"Production"
+attProduction,progression,Attribute,,,"Can't Find It? Just Make It"
 
-skillSurvivalSustenanceName,progression,Skill,,,"Sustenance"
-skillSurvivalWellBeingName,progression,Skill,,,"Well-Being"
-skillSurvivalArmorName,progression,Skill,,,"Armor"
+skillSurvivalSustenanceName,progression,Skill,,,"Eating Brains ain't for Everyone"
+skillSurvivalWellBeingName,progression,Skill,,,"Just Living isn't Enough"
+skillSurvivalArmorName,progression,Skill,,,"Cover Your Shame"
+
+skillCombatMeleeName,progression,Skill,,,"Upclose and Professional"
+skillCombatRangedName,progression,Skill,,,"From a Distance"
+skillCombatSpecialtyName,progression,Skill,,,"You're so Special"
+
+skillProductionResourcesName,progression,Skill,,,"Gathering Resources"
+skillProductionCraftingName,progression,Skill,,,"If You Build it, They will...Die"
+
+skillLootingPillagingName,progression,Skill,,,"Rape and Pillage, Well Maybe Don't Rape the Zombies"
+skillLootingTraffickingName,progression,Skill,,,"Buy and Sell Anything, I Mean Anything"
 
 reqPlayerLevel01,progression,Attribute,,,"Requires Level 1"
 reqPlayerLevel02,progression,Attribute,,,"Requires Level 2"
@@ -148,40 +163,43 @@ attIntellectRank9LongDesc,progression,Attribute,,,"You are now a true genius.",,
 attIntellectRank10Desc,progression,Attribute,,,Mastermind,,Superhirn,Mente maestra,Tête pensante,Mente superiore,マスターマインド,뛰어난 두뇌의 지휘자,Tytan intelektu,Mente Brilhante,Гигант мысли,Üst Akıl,天才大脑,智者
 attIntellectRank10LongDesc,progression,Attribute,,,"You are a mastermind of intellect.",,"Du bist ein wahres Superhirn. Du verursachst 300 % Schaden mit Kopfschüssen und hast mit Schockstäben und Robotik-Geschütztürmen eine Chance von 50 %, dein Ziel zu zerstückeln.",Eres un genio del intelecto. Infliges un 300 % de daño por disparo a la cabeza y tienes un 50 % de posibilidades de desmembrar con porras de aturdimiento y torretas robóticas,Vous êtes une vraie tête pensante. Vos coups à la tête infligent 300 % de dégâts et vous gagnez 50 % de chance de démembrer avec les matraques électriques et les tourelles robotiques.,Sei una mente superiore dell'intelletto. Infliggi il 300% di danni da colpo alla testa e hai una probabilità del 50% di smembramento con manganello elettrico e torrette robotiche.,あなたは知能のマスターマインドです。300%のヘッドショットダメージを与えることができ、スタンバトン、ロボット砲台を使うと50%の確率で切断できます。,당신은 지능을 마음대로 가지고 놉니다. 300% 헤드샷 대미지를 가할 수 있으며 50%의 확률로 스턴 배턴과 로보틱 터렛을 이용해 사지를 날려버릴 수 있습니다.,Twój umysł jest niedościgniony. Zadajesz 300% obrażeń przy trafieniu w głowę i masz 50% szans na rozczłonkowanie pałkami z paralizatorem i robotycznymi wieżyczkami.,Você tem uma mente brilhante. Causa 300% de dano de tiro na cabeça e tem 50% de chance de desmembrar com cassetetes atordoantes e torretas robóticas.,У вас выдающийся ум. Вы наносите 300% урона выстрелом в голову и можете расчленить врага оглушающими жезлами и роботизированными пушками с вероятностью 50%.,"Tam bir üst akılsın. Elektroşok cihazları ve Robot taretlerle %300 kafadan vuruş hasarı ver, %50 ihtimalle parçalarına ayır.",你天才般的大脑中充满了智慧。造成 300% 的爆头伤害，使用眩晕棒与机器人炮塔时有 50% 的几率肢解丧尸。,你才智超群。用致暈棍和機器人炮塔有300%的爆頭傷害和50的斷肢機率。
 
-
-perkHandyManDesc,progression,perk Str,,,"Learn how to become a Handy Man! You have a keen eye for tools and building materials."
-perkHandyManName,progression,perk Str,,,Handy Man
-perkHandyManRank1Desc,progression,perk Str,,,Amateur
+perkHandyManDesc,progression,perk Str,,,"Learn how to become a Handyman! You have a keen eye for tools and building materials."
+perkHandyManName,progression,perk Str,,,"Handyman"
+perkHandyManRank1Desc,progression,perk Str,,,"DIY Enthusiast"
 perkHandyManRank1LongDesc,progression,perk Str,,,"You have no idea what you are doing, but you are willing to give it a shot."
-perkHandyManRank2Desc,progression,perk Str,,,DIY Enthusiast
-perkHandyManRank2LongDesc,progression,perk Str,,,"You have learned a thing or to about knocking shit together."
-perkHandyManRank3Desc,progression,perk Str,,,Professional
-perkHandyManRank3LongDesc,progression,perk Str,,,"You are the literal Mr. Fix-it."
+perkHandyManRank2Desc,progression,perk Str,,,"Family Handyman"
+perkHandyManRank2LongDesc,progression,perk Str,,,"You have learned a thing or to about knocking shit together and can do some repairs around the house."
+perkHandyManRank3Desc,progression,perk Str,,,"Maintenance Worker"
+perkHandyManRank3LongDesc,progression,perk Str,,,"You are getting pretty good at making repairs, and the stuff you repair mostly works."
+perkHandyManRank4Desc,progression,perk Str,,,"Professional"
+perkHandyManRank4LongDesc,progression,perk Str,,,"You are now able to take your skills on the road. People are actually paying you for doing repairs."
+perkHandyManRank5Desc,progression,perk Str,,,"Bob Villa"
+perkHandyManRank5LongDesc,progression,perk Str,,,"You are the literal Mr. Fix-it, This Old House has nothing on you."
 
 perkEngineeringDesc,progression,perk Int,,,"Engineer items faster with reduced costs at workstations."
-perkEngineeringName,progression,perk Int,,,Engineering
-perkEngineeringRank1Desc,progression,perk Int,,,Apprentice
-perkEngineeringRank1LongDesc,progression,perk Int,,,"You are now out of the stone age and an apprentice Engineer!\nItems craft 20% faster at the forge.\nCraft glue cheaper."
-perkEngineeringRank2Desc,progression,perk Int,,,Tinkerer
+perkEngineeringName,progression,perk Int,,,"Engineering"
+perkEngineeringRank1Desc,progression,perk Int,,,"Wood Shop Student"
+perkEngineeringRank1LongDesc,progression,perk Int,,,"You are now out of the stone age and taking some classes in wood shop!\nItems craft 20% faster at the forge.\nCraft glue cheaper."
+perkEngineeringRank2Desc,progression,perk Int,,,"Tinkerer"
 perkEngineeringRank2LongDesc,progression,perk Int,,,"The long hours tinkering on projects is starting to pay dividends!\nItems craft 20% faster at workbenches and cement mixers."
-perkEngineeringRank3Desc,progression,perk Int,,,Craftsman
+perkEngineeringRank3Desc,progression,perk Int,,,"Craftsman"
 perkEngineeringRank3LongDesc,progression,perk Int,,,"You really know your way around the workshop and can build just about anything you set your mind to!\nAll forge recipes cost 10% less, crafting Forged Steel costs 15% less."
-perkEngineeringRank4Desc,progression,perk Int,,,Engineer
+perkEngineeringRank4Desc,progression,perk Int,,,"Engineer"
 perkEngineeringRank4LongDesc,progression,perk Int,,,"MacGyver has nothing on you!\nAll forge recipes cost 15% less, crafting Forged Steel costs 25% less."
-perkEngineeringRank5Desc,progression,perk Int,,,Advanced Engineer
+perkEngineeringRank5Desc,progression,perk Int,,,"Advanced Engineer"
 perkEngineeringRank5LongDesc,progression,perk Int,,,"You are now an Advanced Engineer and would make Archimedes jealous.\nAll forge recipes cost 20% less, crafting Forged Steel costs 35% less."
 
-perkElectricalEngineeringDesc,progression,perk Int,,,Learn the ins and out of electrical assembly!
-perkElectricalEngineeringName,progression,perk Int,,,Electrical Engineering
-perkElectricalEngineeringRank1Desc,progression,perk Int,,,Sparky
+perkElectricalEngineeringDesc,progression,perk Int,,,"Learn the ins and out of electrical assembly!"
+perkElectricalEngineeringName,progression,perk Int,,,"Electrical Engineering"
+perkElectricalEngineeringRank1Desc,progression,perk Int,,,"Sparky"
 perkElectricalEngineeringRank1LongDesc,progression,perk Int,,,"Twist a few wires together and voila. Circuitry! Zzzapp..\nGain 15% XP from electrical trap kills."
-perkElectricalEngineeringRank2Desc,progression,perk Int,,,Go Juicer
+perkElectricalEngineeringRank2Desc,progression,perk Int,,,"Juicer"
 perkElectricalEngineeringRank2LongDesc,progression,perk Int,,,"This one goes there, that one goes there...\nGain 30% XP from electrical trap kills."
-perkElectricalEngineeringRank3Desc,progression,perk Int,,,Electric-trickery
+perkElectricalEngineeringRank3Desc,progression,perk Int,,,"Electric-trickery"
 perkElectricalEngineeringRank3LongDesc,progression,perk Int,,,"You could probably teach a class on Electronics 101 by this point.\nGain 45% XP from electrical trap kills.\n Electrical device crafting costs 15% less"
-perkElectricalEngineeringRank4Desc,progression,perk Int,,,Inventor
+perkElectricalEngineeringRank4Desc,progression,perk Int,,,"Inventor"
 perkElectricalEngineeringRank4LongDesc,progression,perk Int,,,"You are the Nikola Tesla of the apocalypse!\nGain 60% XP from electrical trap kills.\n Electrical device crafting costs 25% less"
-perkElectricalEngineeringRank5Desc,progression,perk Int,,,Genius
+perkElectricalEngineeringRank5Desc,progression,perk Int,,,"Electrical Genius"
 perkElectricalEngineeringRank5LongDesc,progression,perk Int,,,"Your next step is world domination..\nGain 75% XP from electrical trap kills.\n Electrical device crafting costs 35% less"
 
 craftingElectricianDesc,progression,Attribute,,,Reading [DECEA3]Wiring 101[-] will unlock various tiers of electrical items.\nBoost loot odds with [DECEA3]Electronics[-]
@@ -194,3 +212,4 @@ craftingTrapsDesc,progression,Attribute,,,Reading [DECEA3]Electrical Traps[-] wi
 
 craftingWorkstationsDesc,progression,Attribute,,,Reading [DECEA3]Forge Ahead[-] will unlock various tiers of workstations and their tools. Boost loot odds\nwith [DECEA3]Engineering[-]
 
+perkLockPickingRank1LongDesc,progression,perk Per,,,Burglar. You are starting to make a name for yourself. You can pick locks 20% faster and have a 10% lower chance to break lockpicks. Unlocks Lockpick crafting.,,Einbrecher. Du machst dir langsam einen Namen. Du brichst Dietriche 10 % weniger wahrscheinlich ab und knackst Schlösser 20 % schneller.,Saqueador. Estás empezando a hacerte un nombre. Puedes forzar cerraduras un 20 % más rápido y tienes un 10 % menos de probabilidad de romper las ganzúas.,Cambrioleur : Vous commencez à vous faire une petite réputation. Vous crochetez les verrous 20 % plus vite et réduisez les chances de briser vos outils de crochetage de 10 %.,Topo d'appartamento. Ti stai creando una reputazione. Puoi scassinare serrature il 20% più velocemente e hai il 10% di probabilità in meno di rompere i grimaldelli.,強盗。着々と名を上げているようです。ピッキングが20%速くなり、ロックピックが壊れる確率が10%下がります。,빈집털이범입니다. 이름을 알리기 시작했습니다. 자물쇠를 20% 더 빨리 따고 자물쇠 따개를 부러뜨릴 확률이 10% 적어집니다.,Włamywacz. Masz coraz lepszą reputację. Otwierasz zamki 20% szybciej i masz 10% mniejszą szansę złamania wytrycha.,"Arrombador. Você está começando a ganhar fama. Você pode arrombar fechaduras 20% mais rápido, além de ter -10% de chance de as gazuas se quebrarem.","Взломщик. Вы набираетесь опыта. Вы можете на 20% быстрее взламывать замки, а вероятность сломать отмычку снижена на 10%.",Soyguncu. Adından bahsettirmeye başladın. Kilitleri %20 daha hızlı açabilirsin ve maymuncukları kırma ihtimalin %10 azalır.,窃贼。你已经开始小有名气了。你的开锁速度提升20%，损坏撬锁工具的几率降低10%。,竊賊。你開始出名。你的撬鎖速度提高 20%，撬鎖工具損壞機率降低 10%。

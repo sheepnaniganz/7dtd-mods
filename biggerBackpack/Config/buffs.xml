@@ -2,6 +2,6 @@
 <configs>
 	<!-- *** Change Encumbered to Match New Backpack Size -->
 	<set xpath="//buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
-	<set xpath="///buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+	<set xpath="//buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
 	<set xpath="//buff[@name='buffEncumberedInv']/effect_group/triggered_effect[@operation='multiply']/@value">0.01</set>
 </configs>

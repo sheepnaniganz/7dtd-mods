@@ -211,4 +211,4 @@ or @name='gunBowT3CompoundCrossbow'
 			<ingredient name="ammoCrossbowBoltStone" count="100"/>
 		</recipe>
 	</append>
-</config>
+</configs>

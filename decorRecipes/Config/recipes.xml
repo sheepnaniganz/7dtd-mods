@@ -3,7 +3,7 @@
 		<recipe name="woodDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceWood" count="30"/>
 			<ingredient name="resourcePaper" count="10"/>
-			<ingredient name="resourceNails" count="4"/>
+			<ingredient name="resourceNail" count="4"/>
 		</recipe>
 
 		<recipe name="metalDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
@@ -14,7 +14,7 @@
 		<recipe name="mixedDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceForgedIron" count="5"/>
-			<ingredient name="resourceNails" count="4"/>
+			<ingredient name="resourceNail" count="4"/>
 		</recipe>
 
 		<recipe name="polymerDecoBlockVariantHelper" count="1" craft_time="60" craft_area="tableSaw" tags="tableSawCrafting">
@@ -95,14 +95,10 @@ or @name='couchModernBlockVariantHelper'
 or @name='couchUglySingleBlockVariantHelper'
 or @name='couchUglySmallBlockVariantHelper'
 or @name='couchUglyLargeBlockVariantHelper'
-]" name="crafting_area">tableSaw</setattribute>
-
-	<set xpath="//recipe
-[
-@name='shuttersSteelBlockVariantHelper'
-@name='metalFurnitureBlockVariantHelper'
-@name='endTableLamp'
-@name='lanternDecorLightBlockVariantHelper'
-@name='tvBlockVariantHelper'
-]/crafting_area/@value">tableSaw</set>
+or @name='shuttersSteelBlockVariantHelper'
+or @name='metalFurnitureBlockVariantHelper'
+or @name='endTableLamp'
+or @name='lanternDecorLightBlockVariantHelper'
+or @name='tvBlockVariantHelper'
+]" name="craft_area">tableSaw</setattribute>
 </configs>

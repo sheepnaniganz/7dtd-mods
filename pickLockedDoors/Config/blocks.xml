@@ -2,7 +2,7 @@
   <append xpath="//block
 [
 @name='oldWoodDoor'
-or or @name='oldWoodDoorDouble'
+or @name='oldWoodDoorDouble'
 or @name='cellarDoorDoubleWood'
 or @name='cellarDoorDoubleIron'
 or @name='cellarDoorDoubleSteel'

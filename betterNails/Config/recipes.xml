@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <configs>
 	<append xpath="//recipe[
-starts-with(@name,'wood')
-or (contains(@name,'cntSecureStorageChest'))
-or (contains(@name,'ladderWood'))
-or (contains(@name,'oldWoodDoor'))
-or (contains(@name,'oldWoodDoorDouble'))
-or (contains(@name,'woodShapes:VariantHelper'))
-and not(contains(@name,'woodLogPillar100'))
-)
+(starts-with(@name,'wood') and not(@name='woodLogPillar100'))
+or contains(@name,'cntSecureStorageChest')
+or contains(@name,'ladderWood')
+or contains(@name,'oldWoodDoor')
+or contains(@name,'oldWoodDoorDouble')
+or contains(@name,'woodShapes')
 ]">
 		<ingredient name="resourceNail" count="4"/>
 	</append>
@@ -19,4 +16,5 @@ and not(contains(@name,'woodLogPillar100'))
 			<ingredient name="resourceWood" count="5"/>
 			<ingredient name="resourceNail" count="2" />
 		</recipe>
+	</append>
 </configs>
