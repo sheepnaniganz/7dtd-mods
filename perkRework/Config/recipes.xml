@@ -31,4 +31,5 @@ or @name='vaultDoor01_Powered'
 or @name='vaultDoor01Double_Powered'
 ]
 " name="tags">perkElectricalEngineering,learnable</setattribute>
+  <setattribute xpath="//recipe[@name='grilledMeat']" name="tags">perkMasterChef</setattribute>
 </configs>
