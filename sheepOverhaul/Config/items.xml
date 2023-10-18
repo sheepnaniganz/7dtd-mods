@@ -1,0 +1,508 @@
+<configs>
+  <!--
+  * |===========================================================================
+  * | Cement
+  * |===========================================================================
+  -->
+  <!-- *** Lower Crafting Time-->
+  <set xpath="//item[@name='unit_stone']/property[@name='CraftingIngredientTime']/@value">0.01</set>
+
+  <set xpath="//item[@name='resourceClayLump']/property[@name='CraftingIngredientTime']/@value">0.01</set>
+
+  <!-- *** Add Crushed Sand Crafting Time -->
+  <append xpath="//item[@name='resourceCrushedSand']">
+    <property
+        name="CraftingIngredientTime"
+        value="0.01"
+        />
+  </append>
+
+  <!--
+  * |===========================================================================
+  * | Larger Stacks
+  * |===========================================================================
+  -->
+  <set xpath="//item[starts-with(@name,'ammo')]/property[@name='Stacknumber']/@value">250</set>
+  <set xpath="//item[starts-with(@name,'medical')]/property[@name='Stacknumber']/@value">100</set>
+  <set xpath="//item[starts-with(@name,'drug')]/property[@name='Stacknumber']/@value">100</set>
+  <set xpath="//item[starts-with(@name,'food')]/property[@name='Stacknumber']/@value">100</set>
+  <set xpath="//item[starts-with(@name,'foodCrop')]/property[@name='Stacknumber']/@value">1000</set>
+  <set xpath="//item[starts-with(@name,'drink')]/property[@name='Stacknumber']/@value">500</set>
+  <set xpath="//item[starts-with(@name,'resource')]/property[@name='Stacknumber']/@value">30000</set>
+  <set xpath="//item[starts-with(@name,'resourceCrop')]/property[@name='Stacknumber']/@value">
+    500</set>
+  <set xpath="//item[starts-with(@name,'thrown')]/property[@name='Stacknumber']/@value">100</set>
+  <set xpath="//item[starts-with(@name,'tool')]/property[@name='Stacknumber']/@value">5</set>
+
+  <!-- *** Exceptions & Misc *** -->
+  <set xpath="//item[@name='ammoJunkTurretRegular']/property[@name='Stacknumber']/@value">5000</set>
+  <set xpath="//item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">30000</set>
+  <set xpath="//item[@name='casinoCoin']/property[@name='Stacknumber']/@value">50000</set>
+  <set xpath="//item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">1000</set>
+  <set xpath="//item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">1000</set>
+  <set xpath="//item[@name='foodEgg']/property[@name='Stacknumber']/@value">500</set>
+  <set xpath="//item[@name='medicalAloeCream']/property[@name='Stacknumber']/@value">500</set>
+  <set xpath="//item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">500</set>
+  <set xpath="//item[@name='partsMaster']/property[@name='Stacknumber']/@value">50</set>
+  <set xpath="//item[@name='resourceLockPick']/property[@name='Stacknumber']/@value">500</set>
+  <set xpath="//item[@name='ammoBundleMaster']/property[@name='Create_item_count']/@value">250</set>
+
+  <set xpath="//item[@name='ammoBundleArrowExploding'
+                  or @name='ammoBundleCrossbowBoltExploding']/property[@name='Create_item_count']/@value">
+    250</set>
+
+  <set xpath="//item[@name='ammoBundleArrowExploding'
+                  or @name='ammoBundleCrossbowBoltExploding']/property[@name='EconomicValue']/@value">
+    13750</set>
+
+  <!--
+  * |===========================================================================
+  * | Empty Jars
+  * |===========================================================================
+  -->
+  <append xpath="/">
+    <item name="drinkJarEmpty">
+      <property
+          name="CustomIcon"
+          value="drinkJarEmpty"
+          />
+      <property
+          name="HoldType"
+          value="3"
+          />
+      <property
+          name="Meshfile"
+          value="@:Other/items/Food/emptyJarPrefab.prefab"
+          />
+      <property
+          name="DropMeshfile"
+          value="@:Other/items/Misc/sack_droppedPrefab.prefab"
+          />
+      <property
+          name="Material"
+          value="Mglass"
+          />
+      <property
+          name="Stacknumber"
+          value="125"
+          />
+      <property
+          name="EconomicValue"
+          value="6"
+          />
+      <property
+          name="WaterCapacity"
+          value="0.1"
+          />
+      <property
+          name="CraftingIngredientTime"
+          value="9"
+          />
+      <property class="Action1">
+        <property
+            name="Class"
+            value="CollectWater"
+            />
+        <property
+            name="Delay"
+            value="1.0"
+            />
+        <property
+            name="Change_item_to"
+            value="drinkJarRiverWater"
+            />
+        <property
+            name="Sound_start"
+            value="bucketfill_water"
+            />
+      </property>
+      <property
+          name="Group"
+          value="Resources"
+          />
+    </item>
+  </append>
+
+  <append xpath="//item[@name='drinkJarRiverWater'
+                     or @name='drinkJarBoiledWater'
+                     or @name='drinkJarYuccaJuice'
+                     or @name='drinkYuccaJuiceSmoothie'
+                     or @name='drinkJarGoldenRodTea'
+                     or @name='drinkJarRedTea'
+                     or @name='drinkJarCoffee'
+                     or @name='drinkJarBeer']/property[@class='Action0']">
+    <property
+        name="Create_item"
+        value="drinkJarEmpty"
+        />
+  </append>
+
+  <!--
+  * |===========================================================================
+  * | Improved Shotguns
+  * |===========================================================================
+  -->
+  <append xpath="//item[@name='gunShotgunT0PipeShotgun']/effect_group[@name='gunShotgunT0PipeShotgun']">
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".2"
+        force="100"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="10"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".2"
+        force="100"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="10"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".2"
+        force="50"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="5"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".2"
+        force="50"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="5"
+          />
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']">
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".3"
+        force="150"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="15"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".3"
+        force="150"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="15"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".3"
+        force="100"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="10"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".3"
+        force="100"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="10"
+          />
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']">
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".4"
+        force="150"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="20"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".4"
+        force="150"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="20"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".4"
+        force="100"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="15"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".4"
+        force="100"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="15"
+          />
+    </triggered_effect>
+  </append>
+
+  <append xpath="//item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']">
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".5"
+        force="250"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="25"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="other"
+        duration=".5"
+        force="250"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="25"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfPrimaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".5"
+        force="150"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="15"
+          />
+    </triggered_effect>
+    <triggered_effect
+        trigger="onSelfSecondaryActionRayHit"
+        action="Ragdoll"
+        target="otherAOE"
+        range="1.1"
+        target_tags="zombie,animal"
+        duration=".5"
+        force="150"
+        >
+      <requirement
+          name="!EntityTagCompare"
+          target="other"
+          tags="trader"
+          />
+      <requirement
+          name="RandomRoll"
+          seed_type="Random"
+          min_max="0,100"
+          operation="LTE"
+          value="15"
+          />
+    </triggered_effect>
+  </append>
+
+  <!--
+  * |===========================================================================
+  * | Zombie Reach
+  * |===========================================================================
+  -->
+  <set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+  <set xpath="/items/item[@name='meleeHandZombie01']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+  <set xpath="/items/item[@name='meleeHandZombieShort']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+  <set xpath="/items/item[@name='meleeHandZombieShortFeral']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+  <set xpath="/items/item[@name='meleeHandZombieBurning']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+  <set xpath="/items/item[@name='meleeHandZombieBurningFeral']/property[@class='Action0']/property[@name='Range']/@value">1.325</set>
+  <set xpath="/items/item[@name='meleeHandZombieCop']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+  <set xpath="/items/item[@name='meleeHandzombieMutated']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+  <set xpath="/items/item[@name='meleeHandzombieMutatedFeral']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+  <set xpath="/items/item[@name='meleeHandzombieMutatedRadiated']/property[@class='Action0']/property[@name='Range']/@value">1.5</set>
+</configs>

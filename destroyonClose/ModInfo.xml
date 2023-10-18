@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="destroyOnClose" />
-	<DisplayName value="Destroy on Close" />
-	<Description value="Destroy more containers on close" />
-	<Author value="Sheepnaniganz" />
-	<Version value="1.0.0" />
-</xml>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-  <Name value="betterDewCollector" />
-  <DisplayName value="Better Dew Collector" />
-  <Description value="Makes the Dew Collector produce more water, faster and hold 15 bottles." />
-  <Author value="sheepnaniganz" />
-  <Version value="1.0.0" />
-</xml>

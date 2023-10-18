@@ -1,0 +1,90 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+woodDecoBlockVariantHelper,blocks,Variant,,,Wood Decor Items
+metalDecoBlockVariantHelper,blocks,Variant,,,Metal Decor Items
+mixedDecoBlockVariantHelper,blocks,Variant,,,Mixed Media Decor Items
+polymerDecoBlockVariantHelper,blocks,Variant,,,Plastic Decor Items
+concreteDecoBlockVariantHelper,blocks,Variant,,,Concrete Decor Items
+electricDecoBlockVariantHelper,blocks,Variant,,,Electric Decor Items
+glassDecoBlockVariantHelper,blocks,Variant,,,Glass Decor Items
+birdBathPlanterDeco,blocks,Block,,,Bird Bath Planter
+decoEmberPileFire,blocks,Deco,,,Fireplace Embers
+decoEmberPileFire2,blocks,Deco,,,Fireplace Embers
+decoEmberPileFireDesc,blocks,Deco,,,These flaming embers lend some warmth and comfort to a cold concrete base.
+cntWoodBurningStoveFire,blocks,Deco,,,Wood Burning Stove
+cntWoodBurningStoveFireDesc,blocks,Deco,,,Bring the heat to your hearth with an old-fashioned wood burning stove.
+modularFireWoodStackCFire,blocks,Deco,,,Firewood
+
+workstationsT2-2,progression,Attribute,,,Tier 2: Table Saw
+
+resourceBulletCasingSteel,"Bullet Casing, Steel"
+resourceBulletCasingSteelDesc,"Steel bullet casings are cheaper but cause more wear on the barrel."
+ammo44MagnumBulletSteel,".44 Magnum Round, Steel (Ammo)"
+ammo9mmBulletSteel,"9mm Round, Steel (Ammo)"
+ammo762mmBulletFMJSteel,"7.62mm Round, Steel (Ammo)"
+ammoSteelCasedGroupDesc,"Steel-cased ammunition is a cheaper alternative to using brass but wears down barrels faster and is less powerful."
+ammoBundle9mmBulletSteel,"Box of Steel 9mm Ammo (100)"
+ammoBundle44MagnumBulletSteel,"Box of Steel .44 Ammo (100)"
+ammoBundle762mmBulletSteel,"Box of Steel 7.62mm Ammo (100)"
+
+resourcePhosphorusPowder,"Phosphorus Powder"
+resourcePhosphorusPowderBundle,"Bundle of Phosphorus Powder (1000)"
+resourcePhosphorusPowderDesc,"Phosphorus powder is used in the manufacturing of incendiary rounds."
+ammo44MagnumBulletIncendiary,".44 Magnum Round, Incendiary (Ammo)"
+ammo9mmBulletIncendiary,"9mm Round, Incendiary (Ammo)"
+ammo762mmBulletIncendiary,"7.62mm Round, Incendiary (Ammo)"
+ammoIncendiaryGroupDesc,"Incendiary ammo, shoot shit and set it on fire."
+ammoBundle9mmBulletIncendiary,"Box of Incendiary 9mm Ammo (100)"
+ammoBundle44MagnumBulletIncendiary,"Box of Incendiary .44 Ammo (100)"
+ammoBundle762mmBulletIncendiary,"Box of Incendiary 7.62mm Ammo (100)"
+
+
+steelBars,blocks,Block,Steel Bars
+steelBarsCentered,blocks,Block,Steel Bars Centered
+steelBarsCNR,blocks,Block,Steel Bars Corner
+steelBarsDesc,blocks,Block,You can see and shoot through steel bars while offering good protection.
+woodBars,blocks,Block,Wood Bars
+woodBarsCentered,blocks,Block,Wood Bars Centered
+woodBarsCNR,blocks,Block,Wood Bars Corner
+woodBarsDesc,blocks,Block,You can see and shoot through wood bars while offering some protection.
+commercialDoorVariantHelper,blocks,Block,Commercial Doors
+elevatorDoorVariantHelper,blocks,Block,Elevator Doors
+trailerDoorVariantHelper,blocks,Block,Trailer Doors
+woodenFenceDoorVariantHelper,blocks,Block,Fence Doors
+jailVariantHelper,blocks,Block,Jail Doors and Bars
+exteriorHouseDoorVariantHelper,blocks,Block,House Doors
+cabinetDoorVariantHelper,blocks,Block,Closet and Cabinet Doors
+
+trapSpikesSteelDmg0,blocks,Trap,Steel Spikes Trap
+trapSpikesSteelDmg1,blocks,Trap,Steel Spikes Trap 1
+trapSpikesSteelDmg2,blocks,Trap,Steel Spikes Trap 2
+
+cntWallOvenWorking,blocks,Block,,,Working Wall Oven
+cntStoveWorking,blocks,Block,,,Working Stove
+tableLampLightPlayer,blocks,Light,,,Table Lamp
+workLightPlayer,blocks,Light,,,Work Light
+signExitLightPlayer,blocks,Light,,,Exit Sign
+ceilingFanLightPlayer,blocks,Light,,,Ceiling Fan Light
+signShopOpenPlayer,blocks,Sign,,,Shop Sign: Open
+deskLampLightPlayer,blocks,Light,,,Desk Lamp
+lightPlayerVariantHelper,blocks,Light,,,Working Lamps and Lights
+sconce1LightShadowPlayer,blocks,Light,,,Sconce Light
+porchLight01Player,blocks,Light,,,Old Outdoor Light
+porchLight04BrassPlayer,blocks,Light,,,Brass Outdoor Light
+cntGasGrillWorking,blocks,Block,,,Working Gas Grill
+cntCharcoalGrillWorking,blocks,Block,,,Working Charcoal Grill
+porchLight04Player,blocks,Light,,,Iron Outdoor Light
+ceilingLight02Player,blocks,Light,,,Silver Dome Light
+ceilingLight02BrassPlayer,blocks,Light,,,Brass Dome Light
+ceilingLight04Player,blocks,Light,,,Warehouse Ceiling Light
+ceilingLight05Player,blocks,Light,,,Silver Glass Light
+ceilingLight05BrassPlayer,blocks,Light,,,Brass Glass Light
+recessedLightPlayer,blocks,Light,,,Recessed Light
+wallLight01Player,blocks,Light,,,Warehouse Outdoor Light
+fluorescentLightPlayer,blocks,Light,,,Hanging Fluorescent Light
+trackLightPlayer,blocks,Light,,,Track Light
+chandelierLightPlayer,blocks,Light,,,Chandelier
+sinkKitchenWorking,blocks,Block,,,Working Sink
+sinkCounterWorking,blocks,Block,,,Working Sink with Water Filter
+FilterSinkDesc,blocks,Block,,,"Craft this sink to have quicker access to water. With its dual-filter system, you get clean drinking water in only a few minutes!"
+KitchenSinkDesc,blocks,Block,,,"Craft this sink to have quicker access to water. It doesn't contain a filter, so you'll only get murky water out of it, but it's better than nothing, right?"
+stoveWorkingDesc,blocks,Block,,,"A place to cook food."

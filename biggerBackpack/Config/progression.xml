@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<configs>
-  <!-- *** Adjust Perks to Match New Backpack Size -->
-  <set xpath="//perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">5,8,13,21,34</set>
-  <set xpath="//perks/book[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
-  <set xpath="//perks/book[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
-</configs>

@@ -1,7 +1,0 @@
-<configs>
-	<set xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
-		<item group="groupAirDrop01" count="3"/> <!-- 1 -->
-		<item group="groupAirDrop02" count="4"/> <!-- 1 -->
-		<item group="groupAirDrop03" count="3"/> <!-- 1 -->
-	</set>
-</configs>
