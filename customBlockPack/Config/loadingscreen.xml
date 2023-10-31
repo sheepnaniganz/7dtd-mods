@@ -1,9 +1,0 @@
-﻿<doc>
-    <!-- **************************************************************
-        Add an informative message to the game...
-    *************************************************************** -->
-
-    <append xpath="/doc/tips">
-        <tip key="loadingCustomBlocksPack"/>
-    </append>
-</doc>

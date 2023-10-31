@@ -1,9 +1,0 @@
-﻿<doc>
-    <!-- **************************************************************
-        Add a thank you message to the game...
-    *************************************************************** -->
-
-    <append xpath="/doc/tips">
-        <tip key="loadingZZTongPrefabs"/>
-    </append>
-</doc>

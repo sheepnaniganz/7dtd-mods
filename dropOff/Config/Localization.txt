@@ -1,2 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-lblDropOff,UI,Tooltip,,,Drop-Off\nDrop-off yo shit and get back out there,,,,,,,,,,
